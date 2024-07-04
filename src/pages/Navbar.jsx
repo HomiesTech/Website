@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/homies-logo.svg";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +20,7 @@ export default function Navbar() {
               onClick={toggleMenu}
             >
               <span className="sr-only">Open main menu</span>
-              {/* Icon when menu is closed. */}
+              {/* Icon when menu is closed */}
               <svg
                 className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +36,7 @@ export default function Navbar() {
                   d="M4 6h16M4 12h16m-7 6h7"
                 />
               </svg>
-              {/* Icon when menu is open. */}
+              {/* Icon when menu is open */}
               <svg
                 className={`${isOpen ? "block" : "hidden"} h-6 w-6`}
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,51 +54,51 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div className="flex-1 flex items-center justify-between">
             <div className="flex-shrink-0">
               <img className="h-8 w-auto" src={logo} alt="HomiesTech" />
             </div>
-            <div className="hidden sm:block sm:ml-6">
+            <div className="hidden sm:flex sm:flex-1 sm:justify-center">
               <div className="flex space-x-4">
                 <a
                   href="/"
-                  className="text-purple-700 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium "
+                  className="text-purple-700 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Home
                 </a>
                 <a
                   href="/about"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700  px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   About
                 </a>
                 <a
                   href="/features"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700  px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Features
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700  px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Team
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700  px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Testimonials
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700  px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   FAQ
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700  px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contact
                 </a>
@@ -112,43 +113,43 @@ export default function Navbar() {
         <div className="px-2 pt-2 pb-3 space-y-1">
           <a
             href="#"
-            className="text-purple-700 hover:text-white hover:bg-purple-700  block px-3 py-2 rounded-md text-base font-medium"
+            className="text-purple-700 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
           >
             Home
           </a>
           <a
             href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700  block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
           >
             About
           </a>
           <a
             href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700  block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
           >
             Features
           </a>
           <a
             href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700  block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
           >
             Team
           </a>
           <a
             href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700  block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
           >
             Testimonials
           </a>
           <a
             href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700  block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
           >
             FAQ
           </a>
           <a
             href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700  block px-3 py-2 rounded-md text-base font-medium"
+            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
           >
             Contact
           </a>
