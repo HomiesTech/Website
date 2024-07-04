@@ -1,3 +1,7 @@
 export default function Features() {
-  return <h1>features Page</h1>;
+  return (
+    <section>
+      <div>Features</div>
+    </section>
+  );
 }

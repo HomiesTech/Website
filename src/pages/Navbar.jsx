@@ -67,7 +67,7 @@ export default function Navbar() {
                 </a>
                 <a
                   href="/about"
-                  className="text-purple-900 hover:text-white hover:bg-purple-700  px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-900 hover:text-white hover:bg-purple-700  px-3 py-2 rounded-md text-sm font-medium"
                 >
                   About
                 </a>
