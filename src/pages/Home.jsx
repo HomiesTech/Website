@@ -5,21 +5,22 @@ import sliderImg from "../assets/homies-logo.svg";
 const Home = () => {
   return (
     <section className="slider_section relative">
-      <div className="container mx-auto">
+      <div className="container mx-auto p-20">
         <div className="flex flex-wrap">
           <div className="w-full md:w-7/12">
             <div className="detail-box">
-              <h2 className="text-2xl font-bold text-gray-800">best design</h2>
-              <h1 className="text-4xl font-bold text-gray-900">
-                Mobile <br />
-                applications
+              <h2 className="text-6xl font-bold text-purple-700">
+                Best Design
+              </h2>
+              <h1 className="text-8xl font-bold text-gray-900">
+                Mobile Applications
               </h1>
               <div className="mt-4">
                 <a
                   href="#"
-                  className="bg-blue-500 text-white px-4 py-2 rounded"
+                  className="bg-purple-700 text-white px-4 py-2 rounded"
                 >
-                  Read More
+                  Download Application
                 </a>
               </div>
             </div>
