@@ -3,7 +3,6 @@ import ModalVideo from "react-modal-video";
 import "react-modal-video/css/modal-video.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
-import bgImage from "../assets/video-bg.png";
 
 const VideoSection = () => {
   const [isOpen, setOpen] = useState(false);
