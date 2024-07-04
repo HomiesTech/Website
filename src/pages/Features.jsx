@@ -18,8 +18,8 @@ export default function Features() {
         </h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 m-10 p-10">
-        <div className="rounded-md bg-purple-100 flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
-          <div className="bg-purple-700 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
+        <div className="rounded-md bg-blue-50  flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
+          <div className="bg-gradient-to-r from-blue-400 to-purple-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
             <VisibilityIcon />
           </div>
           <h1 className="pl-4 text-xl font-bold">High Resolution</h1>
@@ -29,8 +29,8 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="rounded-md bg-purple-100 flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
-          <div className="bg-purple-700 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
+        <div className="rounded-md bg-blue-50  flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
+          <div className="bg-gradient-to-r from-blue-400 to-purple-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
             <LayersIcon />
           </div>
           <h1 className="pl-4 text-xl font-bold">Retina Ready</h1>
@@ -39,8 +39,8 @@ export default function Features() {
             diam stet diam sed stet lorem
           </p>
         </div>
-        <div className="rounded-md bg-purple-100 flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
-          <div className="bg-purple-700 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
+        <div className="rounded-md bg-blue-50  flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
+          <div className="bg-gradient-to-r from-blue-400 to-purple-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
             <BorderColorIcon />
           </div>
           <h1 className="pl-4 text-xl font-bold">Editable Data</h1>
@@ -49,8 +49,8 @@ export default function Features() {
             diam stet diam sed stet lorem
           </p>
         </div>
-        <div className="rounded-md bg-purple-100 flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
-          <div className="bg-purple-700 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
+        <div className="rounded-md bg-blue-50  flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
+          <div className="bg-gradient-to-r from-blue-400 to-purple-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
             <ShieldIcon />
           </div>
           <h1 className="pl-4 text-xl font-bold">Fully Secured</h1>
@@ -59,8 +59,8 @@ export default function Features() {
             diam stet diam sed stet lorem
           </p>
         </div>
-        <div className="rounded-md bg-purple-100 flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
-          <div className="bg-purple-700 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
+        <div className="rounded-md bg-blue-50  flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
+          <div className="bg-gradient-to-r from-blue-400 to-purple-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
             <CloudIcon />
           </div>
           <h1 className="pl-4 text-xl font-bold">Cloud Storage</h1>
@@ -69,8 +69,8 @@ export default function Features() {
             diam stet diam sed stet lorem
           </p>
         </div>
-        <div className="rounded-md bg-purple-100 flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
-          <div className="bg-purple-700 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
+        <div className="rounded-md bg-blue-50  flex flex-col pl-4 ml-4 transition-transform transform hover:scale-110 duration-500 ease-in-out">
+          <div className="bg-gradient-to-r from-blue-400 to-purple-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
             <PhoneAndroidIcon />
           </div>
           <h1 className="pl-4 text-xl font-bold">Fully Responsive</h1>
