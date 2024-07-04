@@ -4,7 +4,7 @@ import sliderImg from "../assets/homies-logo.svg";
 
 const Home = () => {
   return (
-    <section className="h-[30rem] md:h-[40rem] slider_section relative bg-gradient-to-r from-white to-purple-700">
+    <section className="h-[33rem] md:h-[33rem] slider_section relative bg-gradient-to-r from-white to-purple-700">
       <div className="container mx-auto p-4 md:p-20">
         <div className="flex flex-wrap">
           <div className="w-full md:w-7/12 mb-8 md:mb-0">

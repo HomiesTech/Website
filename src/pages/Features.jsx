@@ -1,6 +1,6 @@
 export default function Features() {
   return (
-    <section>
+    <section style={{ background: "white" }}>
       <div className="mx-auto align-middle justify-center pt-12 md:pt-16 px-4 md:px-0">
         <h1 className="text-xl text-black text-center font-bold uppercase">
           features

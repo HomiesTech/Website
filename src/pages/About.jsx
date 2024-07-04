@@ -2,10 +2,11 @@ import React from "react";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import SupportIcon from "@mui/icons-material/Support";
 import BoltIcon from "@mui/icons-material/Bolt";
+import VideoSection from "./VideoSection";
 
 const About = () => {
   return (
-    <section>
+    <section style={{ background: "white" }}>
       <div className="mx-auto align-middle justify-center pt-12 md:pt-16 px-4 md:px-0">
         <h1 className="text-3xl text-black text-center font-bold uppercase">
           ABOUT
@@ -61,7 +62,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex justify-center pt-12 md:pt-16">
+      <div className="flex justify-center pt-12 md:pt-16 p-10">
         <button className="border-2 px-8 py-2 border-purple-700 text-black text-center rounded-md">
           Learn More
         </button>
