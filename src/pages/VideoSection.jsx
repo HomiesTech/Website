@@ -10,7 +10,7 @@ const VideoSection = () => {
   return (
     <section className="h-[20rem] relative flex items-center justify-center py-8 bg-purple-700 bg-opacity-10">
       <div className="text-center">
-        <h2 className="text-6xl font-bold text-white mb-4">Watch Now</h2>
+        <h2 className="text-6xl font-bold text-purple-700 mb-4">Watch Now</h2>
         <button
           className="text-white bg-purple-700 p-4 rounded-full"
           onClick={() => setOpen(true)}

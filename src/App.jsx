@@ -4,9 +4,13 @@ import Navbar from "./pages/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Features from "./pages/Features";
+import Faq from "./pages/Faq";
 import bgImage from "./assets/bgvideo.jpg";
 import VideoSection from "./pages/VideoSection";
 import Pricing from "./pages/Pricing";
+import Testimonial from "./pages/Testimonial";
+import Team from "./pages/Team";
+import Footer from "./pages/Footer";
 function App() {
   return (
     <div
@@ -24,6 +28,10 @@ function App() {
       <VideoSection />
       <Features />
       <Pricing />
+      <Testimonial />
+      <Team />
+      <Faq />
+      <Footer />
     </div>
   );
 }
