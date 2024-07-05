@@ -42,7 +42,7 @@ const Carousel = () => {
           ))}
         </div>
       </div>
-      <div className="absolute flex justify-center w-full bottom-4 z-20">
+      <div className="absolute flex justify-center w-full bottom-4 z-10">
         {images.map((_, index) => (
           <div
             key={index}

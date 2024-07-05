@@ -6,6 +6,8 @@ import CloudIcon from "@mui/icons-material/Cloud";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import DoneIcon from "@mui/icons-material/Done";
 import Carousel from "./Carousel";
+import SettingsIcon from "@mui/icons-material/Settings";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
 
 export default function Features() {
   return (
@@ -117,6 +119,52 @@ export default function Features() {
         </div>
       </div>
       {/*3 Steps Section*/}
+      <div className="flex flex-col items-center justify-center p-10 m-10">
+        <div>
+          <p className="text-xl text-purple-700 font-bold text-center">
+            How It Works
+          </p>
+          <h1 className="text-5xl font-bold text-center">3 Easy Steps</h1>
+        </div>
+        <div className="flex flex-row justify-center items-center m-8 p-8 space-x-8">
+          <div className="relative bg-blue-50 w-[1/3] p-6 rounded-md flex flex-col items-center">
+            <div className="absolute -top-10 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full w-20 h-20 flex items-center justify-center">
+              <SettingsIcon className="text-white text-4xl" />
+            </div>
+            <h1 className="text-xl font-bold text-center p-2 mt-10">
+              Install The App
+            </h1>
+            <p className="text-gray-500 text-center">
+              Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam
+              eos erat ipsum et lorem et sit sed stet
+            </p>
+          </div>
+          <div className="relative bg-blue-50 w-[1/3] p-6 rounded-md flex flex-col items-center">
+            <div className="absolute -top-10 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full w-20 h-20 flex items-center justify-center">
+              <AccountBoxIcon className="text-white text-4xl" />
+            </div>
+            <h1 className="text-xl font-bold text-center p-2 mt-10">
+              SetUp Your Profile
+            </h1>
+            <p className="text-gray-500 text-center">
+              Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam
+              eos erat ipsum et lorem et sit sed stet
+            </p>
+          </div>
+          <div className="relative bg-blue-50 w-[1/3] p-6 rounded-md flex flex-col items-center">
+            <div className="absolute -top-10 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full w-20 h-20 flex items-center justify-center">
+              <DoneIcon className="text-white text-4xl" />
+            </div>
+            <h1 className="text-xl font-bold text-center p-2 mt-10">
+              Enjoy the Features
+            </h1>
+            <p className="text-gray-500 text-center">
+              Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam
+              eos erat ipsum et lorem et sit sed stet
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
