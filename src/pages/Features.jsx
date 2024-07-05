@@ -4,6 +4,8 @@ import BorderColorIcon from "@mui/icons-material/BorderColor";
 import ShieldIcon from "@mui/icons-material/Shield";
 import CloudIcon from "@mui/icons-material/Cloud";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import DoneIcon from "@mui/icons-material/Done";
+import Carousel from "./Carousel";
 
 export default function Features() {
   return (
@@ -80,6 +82,41 @@ export default function Features() {
           </p>
         </div>
       </div>
+      {/*ScreenShot Section*/}
+      <div className="flex flex-row">
+        <div className="m-10 p-10 w-[2/3]">
+          <p className="text-purple-700 font-bold text-xl m-2">ScreenShot</p>
+          <h1 className="text-5xl text-black font-bold m-2">
+            User Friendly interface And Very Easy To Use Fitness App
+          </h1>
+          <p className="text-gray-500 m-2 p-4">
+            Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos
+            labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem
+            sit clita duo justo eirmod magna dolore erat amet
+          </p>
+          <p className="text-gray-500 m-2 p-2">
+            <DoneIcon className="text-purple-700" /> Diam dolor diam ipsum et
+            tempor sit
+          </p>
+          <p className="text-gray-500 m-2 p-2">
+            <DoneIcon className="text-purple-700" /> Aliqu diam amet diam et eos
+            labore
+          </p>
+          <p className="text-gray-500 m-2 p-2">
+            <DoneIcon className="text-purple-700" /> Clita erat ipsum et lorem
+            et sit
+          </p>
+          <div className="pt-12 md:pt-16 p-6">
+            <button className=" px-8 py-4 bg-gradient-to-r from-blue-400 to-purple-600 text-white text-center rounded-3xl">
+              Read More
+            </button>
+          </div>
+        </div>
+        <div className="w-[1/3] m-10 p-10 relative ">
+          <Carousel />
+        </div>
+      </div>
+      {/*3 Steps Section*/}
     </section>
   );
 }
