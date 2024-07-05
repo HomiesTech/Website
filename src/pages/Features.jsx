@@ -11,8 +11,8 @@ import AccountBoxIcon from "@mui/icons-material/AccountBox";
 
 export default function Features() {
   return (
-    <section style={{ background: "white" }}>
-      <div className="mx-auto align-middle justify-center pt-12 md:pt-16 px-4 md:px-0">
+    <section className="mt-2" style={{ background: "white" }}>
+      <div className="mx-auto align-middle justify-center pt-2 md:pt-16 px-4 md:px-0 py:0">
         <h1 className="text-xl text-black text-center font-bold uppercase">
           features
         </h1>

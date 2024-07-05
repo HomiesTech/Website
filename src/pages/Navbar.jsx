@@ -82,7 +82,7 @@ export default function Navbar() {
                   href="#"
                   className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Team
+                  Pricing
                 </a>
                 <a
                   href="#"
