@@ -24,8 +24,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 bg-purple-700 p-6 md:p-20 flex items-center justify-center">
-        <div className="relative">
+      <div className="w-full md:w-1/2 bg-purple-700 p-[5rem] md:p-20 flex items-center justify-center">
+        <div className="relative mt-[3rem] pt-[3rem]">
           <Carousel />
         </div>
       </div>

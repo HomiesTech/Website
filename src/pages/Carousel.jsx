@@ -27,18 +27,22 @@ const Carousel = () => {
         alt="Phone Frame"
         className="absolute w-full h-full top-0 left-0 z-10 pointer-events-none"
       />
-      <div className="absolute w-full h-full top-0 left-0 flex items-center justify-center overflow-hidden rounded-3xl">
+      <div className="absolute w-[88%] h-[98%] top-[2%] left-[5%] flex items-center justify-center overflow-hidden rounded-3xl">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {images.map((src, index) => (
-            <img
+            <div
               key={index}
-              src={src}
-              alt={`Slide ${index}`}
-              className="w-full h-full object-cover"
-            />
+              className="w-full h-full flex-shrink-0 flex items-center justify-center"
+            >
+              <img
+                src={src}
+                alt={`Slide ${index}`}
+                className="w-full h-full object-cover rounded-3xl"
+              />
+            </div>
           ))}
         </div>
       </div>
@@ -46,7 +50,7 @@ const Carousel = () => {
         {images.map((_, index) => (
           <div
             key={index}
-            className={`w-3 h-3 mx-1 rounded-full ${
+            className={`w-2 h-2 mx-1 rounded-full ${
               index === currentIndex ? "bg-blue-500" : "bg-gray-300"
             }`}
           ></div>
