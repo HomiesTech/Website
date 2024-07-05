@@ -11,6 +11,7 @@ import Pricing from "./pages/Pricing";
 import Testimonial from "./pages/Testimonial";
 import Team from "./pages/Team";
 import Footer from "./pages/Footer";
+import ContactForm from "./pages/ContactForm";
 function App() {
   return (
     <div
@@ -31,6 +32,7 @@ function App() {
       <Testimonial />
       <Team />
       <Faq />
+      <ContactForm />
       <Footer />
     </div>
   );

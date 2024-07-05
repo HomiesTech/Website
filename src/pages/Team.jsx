@@ -1,7 +1,5 @@
 import React from "react";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import SupportIcon from "@mui/icons-material/Support";
-import BoltIcon from "@mui/icons-material/Bolt";
+import profile from "../assets/img.svg";
 
 const Team = () => {
   return (
@@ -21,8 +19,8 @@ const Team = () => {
       </div>
       <div className="flex flex-wrap justify-center mx-auto pt-12 md:pt-16 px-4 md:px-0 ">
         <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8">
-          <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-600 h-[10rem] w-[10rem]">
-            img
+          <div className="flex text-white items-center justify-center rounded-full bg-white h-[10rem] w-[10rem]">
+            <img src={profile} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
             Name
@@ -30,8 +28,8 @@ const Team = () => {
           <p className="text-center text-gray-500 p-2 m-2">Position</p>
         </div>
         <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8">
-          <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-600 h-[10rem] w-[10rem]">
-            img
+          <div className="flex text-white items-center justify-center rounded-full bg-white h-[10rem] w-[10rem]">
+            <img src={profile} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
             name
@@ -39,8 +37,8 @@ const Team = () => {
           <p className="text-center text-gray-500 p-2 m-2">Position</p>
         </div>
         <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8">
-          <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-purple-600 h-[10rem] w-[10rem]">
-            img
+          <div className="flex text-white items-center justify-center rounded-full bg-white h-[10rem] w-[10rem]">
+            <img src={profile} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
             Name
