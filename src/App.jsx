@@ -26,8 +26,8 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <VideoSection />
       <Features />
+      <VideoSection />
       <Pricing />
       <Testimonial />
       <Team />

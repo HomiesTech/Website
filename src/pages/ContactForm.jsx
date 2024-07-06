@@ -48,15 +48,14 @@ const ContactForm = () => {
 
   return (
     <div className="container mx-auto py-5 px-5">
-      <div className="text-center mb-12">
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-5">
-          Contact Us
-        </h1>
+      <div className="text-center">
+        <h2 className="text-2xl font-bold text-purple-700">Contact Us</h2>
+        <h1 className="text-4xl font-bold mt-2">Get In Touch!</h1>
       </div>
       <form className="max-w-xl mx-auto" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-purple-700 text-sm font-bold mb-2"
             htmlFor="name"
           >
             Name
@@ -73,7 +72,7 @@ const ContactForm = () => {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-purple-700 text-sm font-bold mb-2"
             htmlFor="email"
           >
             Email
@@ -88,9 +87,10 @@ const ContactForm = () => {
             required
           />
         </div>
+        {status && <p className="mt-4 text-center text-red-500">{status}</p>}
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-purple-700 text-sm font-bold mb-2"
             htmlFor="message"
           >
             Message
@@ -108,12 +108,11 @@ const ContactForm = () => {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className=" bg-gradient-to-r from-blue-400 to-purple-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Send Message
           </button>
         </div>
-        {status && <p className="mt-4 text-center text-red-500">{status}</p>}
       </form>
     </div>
   );

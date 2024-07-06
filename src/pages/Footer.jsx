@@ -9,7 +9,7 @@ const Footer = () => {
             <h2 className="text-xl font-bold mb-2 text-black">About Us</h2>
             <p className="text-white">
               We are a company dedicated to providing the best service in the
-              industry. Contact us for more information.
+              industry. Contact us for more information.ABC
             </p>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">

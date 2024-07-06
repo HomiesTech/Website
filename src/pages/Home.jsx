@@ -13,14 +13,6 @@ const Home = () => {
           <h1 className="text-5xl md:text-8xl font-bold text-gray-900">
             Mobile Applications
           </h1>
-          <div className="mt-4 md:mt-8">
-            <a
-              href="#"
-              className="bg-gradient-to-r from-blue-400 to-purple-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:from-blue-500 hover:to-purple-700 transition duration-300"
-            >
-              Download Application
-            </a>
-          </div>
         </div>
       </div>
 
