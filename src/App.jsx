@@ -12,6 +12,7 @@ import Testimonial from "./pages/Testimonial";
 import Team from "./pages/Team";
 import Footer from "./pages/Footer";
 import ContactForm from "./pages/ContactForm";
+import DownloadSection from "./pages/DownloadSection";
 function App() {
   return (
     <div
@@ -29,8 +30,7 @@ function App() {
       <Features />
       <VideoSection />
       <Pricing />
-      <Testimonial />
-      <Team />
+      <DownloadSection />
       <Faq />
       <ContactForm />
       <Footer />

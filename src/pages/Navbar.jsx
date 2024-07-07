@@ -62,7 +62,7 @@ export default function Navbar() {
               <div className="flex space-x-4">
                 <a
                   href="/"
-                  className="text-purple-700 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-blue-600 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Home
                 </a>
