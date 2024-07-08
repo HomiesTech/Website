@@ -1,10 +1,15 @@
 import React from "react";
-import bg from "../assets/wave.svg";
+import bg from "../assets/wave1.svg";
 const Footer = () => {
   return (
-    <footer className="bg-white text-white py-8">
+    <footer
+      className=" text-white py-8"
+      style={{
+        backgroundImage: `url('${bg}')`,
+      }}
+    >
       <div className="container mx-auto px-4 pt-[4rem]">
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between pt-[4rem]">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h2 className="text-xl font-bold mb-2 text-black">About Us</h2>
             <p className="text-white">

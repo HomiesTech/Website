@@ -34,7 +34,7 @@ function App() {
       <section id="features" className="mt-20">
         <Features />
       </section>
-      <section id="video" className="mt-20">
+      <section id="video">
         <VideoSection />
       </section>
       <section id="pricing" className="mt-20">
