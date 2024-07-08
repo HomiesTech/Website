@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/homies-logo.svg";
 
 export default function Navbar() {
@@ -60,54 +61,64 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:flex sm:flex-1 sm:justify-center">
               <div className="flex space-x-4">
-                <a
-                  href="/"
-                  className="text-blue-600 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                <ScrollLink
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-blue-600 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Home
-                </a>
-                <a
-                  href="/about"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                </ScrollLink>
+                <ScrollLink
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   About
-                </a>
-                <a
-                  href="/features"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                </ScrollLink>
+                <ScrollLink
+                  to="features"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Features
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                </ScrollLink>
+
+                <ScrollLink
+                  to="pricing"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Pricing
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                </ScrollLink>
+                <ScrollLink
+                  to="download"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Testimonials
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Team
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  Download App
+                </ScrollLink>
+
+                <ScrollLink
+                  to="faq"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   FAQ
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                </ScrollLink>
+                <ScrollLink
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contact
-                </a>
+                </ScrollLink>
               </div>
             </div>
           </div>
@@ -117,48 +128,78 @@ export default function Navbar() {
       {/* Mobile menu, toggle className hidden */}
       <div className={`sm:hidden ${isOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#"
-            className="text-purple-700 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+          <ScrollLink
+            to="home"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-purple-700 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleMenu}
           >
             Home
-          </a>
-          <a
-            href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+          </ScrollLink>
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleMenu}
           >
             About
-          </a>
-          <a
-            href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+          </ScrollLink>
+          <ScrollLink
+            to="features"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleMenu}
           >
             Features
-          </a>
-          <a
-            href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+          </ScrollLink>
+          <ScrollLink
+            to="pricing"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleMenu}
           >
-            Team
-          </a>
-          <a
-            href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            Pricing
+          </ScrollLink>
+          <ScrollLink
+            to="testimonials"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleMenu}
           >
             Testimonials
-          </a>
-          <a
-            href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+          </ScrollLink>
+          <ScrollLink
+            to="team"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleMenu}
+          >
+            Team
+          </ScrollLink>
+          <ScrollLink
+            to="faq"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleMenu}
           >
             FAQ
-          </a>
-          <a
-            href="#"
-            className="text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleMenu}
           >
             Contact
-          </a>
+          </ScrollLink>
         </div>
       </div>
     </nav>

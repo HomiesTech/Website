@@ -25,15 +25,33 @@ function App() {
       }}
     >
       <Navbar />
-      <Home />
-      <About />
-      <Features />
-      <VideoSection />
-      <Pricing />
-      <DownloadSection />
-      <Faq />
-      <ContactForm />
-      <Footer />
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about" className="mt-20">
+        <About />
+      </section>
+      <section id="features" className="mt-20">
+        <Features />
+      </section>
+      <section id="video" className="mt-20">
+        <VideoSection />
+      </section>
+      <section id="pricing" className="mt-20">
+        <Pricing />
+      </section>
+      <section id="download" className="mt-20">
+        <DownloadSection />
+      </section>
+      <section id="faq" className="mt-20">
+        <Faq />
+      </section>
+      <section id="contact" className="mt-20">
+        <ContactForm />
+      </section>
+      <section id="Footer" className="mt-20">
+        <Footer />
+      </section>
     </div>
   );
 }

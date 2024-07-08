@@ -7,11 +7,11 @@ import image3 from "../assets/screenshot-3.png";
 
 export default function DownloadSection() {
   return (
-    <div className="container mx-auto py-5">
-      <div className="py-5 px-5 lg:px-20">
+    <div className="container mx-auto h-[30rem] pt-[6rem] mt-[6rem]">
+      <div className="py-2 px-2 lg:px-20">
         <div className="flex flex-wrap lg:flex-nowrap items-center gap-5">
           <div className="w-full lg:w-1/2">
-            <div className="relative flex justify-center items-center h-screen">
+            <div className="relative flex justify-center items-center ">
               <div className="relative z-1 transform -rotate-45">
                 <img
                   src={image1}

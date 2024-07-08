@@ -8,7 +8,7 @@ const VideoSection = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <section className="h-[20rem] relative flex items-center justify-center py-8 bg-blue-700 bg-opacity-40">
+    <section className="h-[20rem] relative flex items-center justify-center py-5 bg-blue-700 bg-opacity-40">
       <div>
         <div className="text-center">
           <h2 className="text-6xl font-bold text-blue-700 mb-4">Demo Video</h2>
