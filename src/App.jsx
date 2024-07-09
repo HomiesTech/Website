@@ -26,7 +26,7 @@ function App() {
       <section id="home">
         <Home />
       </section>
-      <section id="about" className="mt-20">
+      <section id="about">
         <About />
       </section>
       <section id="features" className="mt-20">

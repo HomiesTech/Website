@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/homies-logo.svg";
-
+import MenuIcon from "@mui/icons-material/Menu";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,44 +20,12 @@ export default function Navbar() {
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleMenu}
             >
-              <span className="sr-only">Open main menu</span>
-              {/* Icon when menu is closed */}
-              <svg
-                className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
-              {/* Icon when menu is open */}
-              <svg
-                className={`${isOpen ? "block" : "hidden"} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <MenuIcon />
             </button>
           </div>
           <div className="flex-1 flex items-center justify-between">
             <div className="flex-shrink-0">
-              <img className="h-8 w-auto" src={logo} alt="HomiesTech" />
+              {/* <img className="h-8 w-auto" src={logo} alt="HomiesTech" /> */}
             </div>
             <div className="hidden sm:flex sm:flex-1 sm:justify-center">
               <div className="flex space-x-4">
@@ -65,7 +33,7 @@ export default function Navbar() {
                   to="home"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-blue-600 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="cursor-pointer text-blue-600 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
                 >
                   Home
                 </ScrollLink>
@@ -73,7 +41,7 @@ export default function Navbar() {
                   to="about"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
                 >
                   About
                 </ScrollLink>
@@ -81,7 +49,7 @@ export default function Navbar() {
                   to="features"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
                 >
                   Features
                 </ScrollLink>
@@ -90,7 +58,7 @@ export default function Navbar() {
                   to="pricing"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
                 >
                   Pricing
                 </ScrollLink>
@@ -98,7 +66,7 @@ export default function Navbar() {
                   to="download"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
                 >
                   Download App
                 </ScrollLink>
@@ -107,7 +75,7 @@ export default function Navbar() {
                   to="faq"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
                 >
                   FAQ
                 </ScrollLink>
@@ -115,7 +83,7 @@ export default function Navbar() {
                   to="contact"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium"
+                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
                 >
                   Contact
                 </ScrollLink>
