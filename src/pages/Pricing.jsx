@@ -40,7 +40,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center py-10 ">
+    <div className="flex flex-col items-center justify-center pt-[5rem] ">
       <div className="text-center">
         <h2 className="text-2xl font-bold text-purple-700">Pricing Plan</h2>
         <h1 className="text-4xl font-bold mt-2">Choose Your Plan</h1>

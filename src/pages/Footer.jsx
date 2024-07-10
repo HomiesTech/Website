@@ -1,9 +1,9 @@
 import React from "react";
-
+import bg from "../assets/wave.svg";
 const Footer = () => {
   return (
-    <footer className="bg-purple-500 text-white py-8">
-      <div className="container mx-auto px-4">
+    <footer className="bg-white text-white py-8">
+      <div className="container mx-auto px-4 pt-[4rem]">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h2 className="text-xl font-bold mb-2 text-black">About Us</h2>

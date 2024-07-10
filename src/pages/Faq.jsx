@@ -40,7 +40,7 @@ const Faq = () => {
   };
 
   return (
-    <section className="m-[2rem] p-[2rem]">
+    <section>
       <div className="container mx-auto py-5 px-5">
         <div className="text-center mb-12">
           <div className="mx-auto align-middle justify-center pt-12 md:pt-16 px-4 md:px-0">
