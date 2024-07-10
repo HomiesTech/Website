@@ -36,7 +36,7 @@ export default function Features() {
             key={index}
             className="rounded-md bg-blue-50 flex flex-col p-4 transition-transform transform hover:scale-110 duration-500 ease-in-out"
           >
-            <div className="bg-gradient-to-r from-blue-300 to-blue-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
+            <div className="bg-gradient-to-r from-blue-400 to-blue-700 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
               <Icon />
             </div>
             <h1 className="text-xl font-bold">{title}</h1>
@@ -74,7 +74,7 @@ export default function Features() {
             sit
           </p>
           <div className="pt-12 md:pt-16 p-6">
-            <button className="px-8 py-4 bg-gradient-to-r font-glory text-xl font-bold from-blue-300 to-blue-600 text-black text-center rounded-md">
+            <button className="px-8 py-4 bg-gradient-to-r font-glory text-xl font-bold from-blue-400 to-blue-700 text-black text-center rounded-md">
               Read More
             </button>
           </div>
@@ -103,7 +103,7 @@ export default function Features() {
               key={index}
               className="relative bg-blue-50 p-6 rounded-md flex flex-col items-center"
             >
-              <div className="absolute -top-10 bg-gradient-to-r from-blue-300 to-blue-600 rounded-full w-20 h-20 flex items-center justify-center">
+              <div className="absolute -top-10 bg-gradient-to-r from-blue-400 to-blue-700 rounded-full w-20 h-20 flex items-center justify-center">
                 <Icon className="text-white text-4xl" />
               </div>
               <h1 className="text-xl font-bold text-center p-2 mt-10">

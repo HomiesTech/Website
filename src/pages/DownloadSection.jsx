@@ -15,21 +15,21 @@ export default function DownloadSection() {
               <img
                 src={image1}
                 alt="Image 1"
-                className=" md:w-[10rem] md:h-[20rem] rounded-lg shadow-lg"
+                className=" w-30 h-60 md:w-[10rem] md:h-[20rem] rounded-lg shadow-lg"
               />
             </div>
             <div className="absolute z-10 transform rotate-0">
               <img
                 src={image2}
                 alt="Image 2"
-                className=" md:w-[10rem] md:h-[20rem] rounded-lg shadow-lg"
+                className=" w-30 h-60 md:w-[10rem] md:h-[20rem] rounded-lg shadow-lg"
               />
             </div>
             <div className="relative z-1 transform rotate-45">
               <img
                 src={image3}
                 alt="Image 3"
-                className="md:w-[10rem] md:h-[20rem] rounded-lg shadow-lg"
+                className=" w-30 h-60 md:w-[10rem] md:h-[20rem] rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function DownloadSection() {
             <div className="mt-4 md:mt-8 p-2">
               <a
                 href="#"
-                className="flex items-center bg-gradient-to-r from-blue-400 to-blue-700 text-white font-semibold py-3 px-4 rounded-xl shadow-lg hover:from-blue-300 hover:to-blue-500 transition duration-300"
+                className="flex items-center bg-gradient-to-r from-blue-400 to-blue-700 text-white font-semibold py-3 px-4 rounded-xl shadow-lg   transition duration-300"
               >
                 <AdbIcon className="mr-2" />
                 <span>Available on Play Store</span>
