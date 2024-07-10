@@ -61,7 +61,7 @@ const Faq = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-blue-300 to-blue-600  font-poppins shadow-lg rounded-lg"
+              className="bg-gradient-to-r from-blue-400 to-blue-700  font-poppins shadow-lg rounded-lg"
             >
               <button
                 className="w-full text-left px-6 py-4 focus:outline-none"

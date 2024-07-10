@@ -85,7 +85,7 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <button className="mt-6 py-2 px-4 bg-gradient-to-r text-xl font-bold from-blue-300 to-blue-600 text-black rounded-full hover:bg-purple-800 transition duration-200">
+            <button className="mt-6 py-2 px-4 bg-gradient-to-r text-xl font-bold from-blue-400 to-blue-700 text-black rounded-full hover:bg-purple-800 transition duration-200">
               Get Started
             </button>
           </div>

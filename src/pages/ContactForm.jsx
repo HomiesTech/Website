@@ -74,7 +74,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="shadow appearance-none border-2 border-gray-500 rounded w-full py-2 px-3 text-blue-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-blue-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
@@ -91,7 +91,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="shadow appearance-none border-2 border-gray-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
@@ -108,7 +108,7 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="shadow appearance-none border-2 border-gray-500 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             rows="5"
             required
           />
@@ -116,7 +116,7 @@ const ContactForm = () => {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className=" bg-gradient-to-r font-glory from-blue-300 to-blue-600 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className=" bg-gradient-to-r font-glory from-blue-400 to-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Send Message
           </button>
