@@ -7,6 +7,7 @@ const ContactForm = () => {
     name: "",
     email: "",
     message: "",
+    phone: "",
   });
 
   const formRef = useRef(null);
@@ -22,21 +23,26 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const formDatab = new FormData(formRef.current);
+    let date = new Date().toLocaleDateString();
+    let time = new Date().toLocaleTimeString();
+
+    formDatab.append("date", date);
+    formDatab.append("time", time);
+
     fetch(
-      "https://script.google.com/macros/s/AKfycbwktpOwrY7C2zFz9HZZmtHyDqPm8fKENnbtDi20zP3nHTG6C8HtkLeiYgiWmf11cC-s/exec",
+      "https://script.google.com/macros/s/AKfycbx0nYPGKQND0b0mASKrvQAhm4uj3qJWDAQD7vkei12IsC5gKfrJzEN5Bx76JaO88tvD/exec",
       {
         method: "POST",
         body: formDatab,
       }
     )
       .then(() => {
-        toast.success(
-          "Your message was successfully sent to the Google Sheet database!"
-        );
+        toast.success("Submitted Successfully");
         setFormData({
           name: "",
           email: "",
           message: "",
+          phone: "",
         });
       })
       .catch((error) => {
@@ -92,6 +98,22 @@ const ContactForm = () => {
             onChange={handleChange}
             className="shadow appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-blue-600 text-md font-bold mb-2"
+            htmlFor="phone"
+          >
+            Phone Number
+          </label>
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            className="shadow appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
         <div className="mb-4">
