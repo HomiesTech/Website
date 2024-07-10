@@ -73,7 +73,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="shadow appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-blue-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border-2 border-gray-300 rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
             required
           />
         </div>
