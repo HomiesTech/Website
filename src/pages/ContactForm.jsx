@@ -47,12 +47,12 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mx-auto py-20 px-5 mt-[5rem] pt-[5rem] h-[30rem] pb-[10rem]">
-      <div className="text-center">
+    <div className="container mx-auto py-20 px-5 mt-[5rem] pt-[5rem] h-[30rem] pb-[10rem]  bg-transparent">
+      <div className="text-center bg-transparent">
         <h2 className="text-2xl font-bold text-purple-700">Contact Us</h2>
         <h1 className="text-4xl font-bold mt-2">Get In Touch!</h1>
       </div>
-      <form className="max-w-xl mx-auto" onSubmit={handleSubmit}>
+      <form className="max-w-xl mx-auto bg-transparent" onSubmit={handleSubmit}>
         <div className="mb-4">
           <label
             className="block text-purple-700 text-sm font-bold mb-2"

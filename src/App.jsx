@@ -17,8 +17,6 @@ function App() {
   return (
     <div
       style={{
-        //backgroundImage: `url(${bgImage})`,
-        //backgroundImage: `url('https://as1.ftcdn.net/v2/jpg/04/75/87/40/1000_F_475874092_QXxkJdu8ZrxJibYs7K5JnDU3YDf6OP0o.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         background: "white",
