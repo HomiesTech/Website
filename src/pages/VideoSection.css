@@ -1,0 +1,40 @@
+/* customModalVideoStyles.css */
+.modal-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-video-movie-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+  }
+  
+  .modal-video-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-video-inner {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  
+  .modal-video-movie {
+    width: 100%;
+    height: 100%;
+  }
+  
+ 
