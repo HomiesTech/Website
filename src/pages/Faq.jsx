@@ -44,11 +44,11 @@ const Faq = () => {
       <div className="container mx-auto py-5 px-5">
         <div className="text-center mb-12">
           <div className="mx-auto align-middle justify-center pt-12 md:pt-16 px-4 md:px-0">
-            <h1 className="text-3xl text-black text-center font-bold uppercase">
+            <h1 className="text-4xl text-black text-center font-bold uppercase font-glory">
               Frequently Asked Questions
             </h1>
-            <hr className="border-purple-700 border-2 w-32 mx-auto mt-2 mb-6"></hr>
-            <div className="text-center mx-auto max-w-2xl text-gray-500">
+            <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>
+            <div className="text-center mx-auto max-w-2xl text-gray-500  font-poppins">
               <p>
                 Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
                 viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
@@ -61,26 +61,26 @@ const Faq = () => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-blue-400 to-purple-600 shadow-lg rounded-lg"
+              className="bg-gradient-to-r from-blue-300 to-blue-600  font-poppins shadow-lg rounded-lg"
             >
               <button
                 className="w-full text-left px-6 py-4 focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex justify-between items-center">
-                  <h2 className="text-lg font-medium text-white">
+                  <h2 className="text-lg font-medium text-black">
                     {item.question}
                   </h2>
 
-                  <span className="text-white">
+                  <span className="text-black">
                     {activeIndex === index ? "-" : "+"}
                   </span>
                 </div>
               </button>
               {activeIndex === index && (
-                <div className="px-6 pb-4">
-                  <hr className="border-white"></hr>
-                  <p className="text-white">{item.answer}</p>
+                <div className="px-6 pb-4 ">
+                  <hr className="border-black"></hr>
+                  <p className="text-black ">{item.answer}</p>
                 </div>
               )}
             </div>

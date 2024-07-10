@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Done from "@mui/icons-material/Done";
+
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
@@ -40,15 +41,15 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center pt-[5rem] ">
-      <div className="text-center">
-        <h2 className="text-2xl font-bold text-purple-700">Pricing Plan</h2>
-        <h1 className="text-4xl font-bold mt-2">Choose Your Plan</h1>
+    <div className="flex flex-col items-center justify-center pt-16 px-4 md:px-10 lg:px-20">
+      <div className="text-center font-glory">
+        <h2 className="text-3xl font-bold text-blue-600">Pricing Plan</h2>
+        <h1 className="text-5xl font-bold mt-2">Choose Your Plan</h1>
       </div>
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-6 font-glory text-xl">
         <button
           className={`py-2 px-4 rounded-l-full ${
-            isMonthly ? "bg-purple-700 text-white" : "bg-gray-200 text-gray-600"
+            isMonthly ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-600"
           }`}
           onClick={() => setIsMonthly(true)}
         >
@@ -56,22 +57,18 @@ const Pricing = () => {
         </button>
         <button
           className={`py-2 px-4 rounded-r-full ${
-            !isMonthly
-              ? "bg-purple-700 text-white"
-              : "bg-gray-200 text-gray-600"
+            !isMonthly ? "bg-blue-700 text-white" : "bg-gray-200 text-gray-600"
           }`}
           onClick={() => setIsMonthly(false)}
         >
           Yearly
         </button>
       </div>
-      <div className="flex flex-wrap justify-center mt-10 space-x-10 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 font-poppins">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="bg-blue-50 border-2 border-gray-100 p-10 rounded-lg shadow-lg  mb-6
-            transition-transform tranform hover:scale-105 duration-500 ease-in-out w-[1/3]
-            "
+            className="bg-blue-50 border-2 border-gray-100 p-10 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-500 ease-in-out"
           >
             <h3 className="text-xl font-bold text-blue-700">{plan.title}</h3>
             <p className="text-gray-600">Powerful & Awesome Features</p>
@@ -84,11 +81,11 @@ const Pricing = () => {
             <ul className="text-gray-600">
               {plan.features.map((feature, i) => (
                 <li key={i} className="flex justify-between items-center mt-2">
-                  {feature} <Done className=" text-purple-700" />
+                  {feature} <Done className="text-blue-500" />
                 </li>
               ))}
             </ul>
-            <button className="mt-6 py-2 px-4 bg-gradient-to-r from-blue-400 to-purple-600 text-white rounded-full hover:bg-purple-800 transition duration-200">
+            <button className="mt-6 py-2 px-4 bg-gradient-to-r text-xl font-bold from-blue-300 to-blue-600 text-black rounded-full hover:bg-purple-800 transition duration-200">
               Get Started
             </button>
           </div>
