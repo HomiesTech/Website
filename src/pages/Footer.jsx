@@ -7,7 +7,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 const Footer = () => {
   return (
     <footer
-      className="text-white py-10 w-full pt-[15rem] hidden sm:block"
+      className="text-white py-10 w-full pt-[15rem] "
       style={{
         backgroundImage: `url('${bg}')`,
         backgroundSize: "cover",
@@ -15,8 +15,8 @@ const Footer = () => {
         backgroundPosition: "center bottom",
       }}
     >
-      <div className="container mx-auto px-6 relative z-10 py-13">
-        <div className="flex flex-wrap justify-between items-start">
+      <div className="container mx-auto px-6 relative z-10 py-13 m-[1rem] md:m-[2rem]">
+        <div className="flex flex-wrap justify-between items-start  pt-[25rem] md:p-[2rem]">
           <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 lg:mb-0">
             <h2 className="text-xl font-bold mb-2 text-black">About Us</h2>
             <p className="text-white">
