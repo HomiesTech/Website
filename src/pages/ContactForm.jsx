@@ -55,14 +55,14 @@ const ContactForm = () => {
     <div className="container mx-auto py-20 px-5 mt-[5rem] pt-[5rem] h-[30rem] pb-[10rem] bg-transparent">
       <ToastContainer />
       <div className="text-center bg-transparent">
-        <h2 className="text-3xl font-bold text-blue-600 font-glory">
+        <h2 className="text-2xl font-bold text-blue-600 font-poppins">
           Contact Us
         </h2>
-        <h1 className="text-5xl font-bold mt-2 font-glory">Get In Touch!</h1>
+        <h1 className="text-4xl font-bold mt-2 font-poppins">Get In Touch!</h1>
       </div>
       <form
         ref={formRef}
-        className="max-w-xl mx-auto bg-transparent text-xl font-glory"
+        className="max-w-xl mx-auto bg-transparent text-xl font-poppins"
         name="submit-to-google-sheet"
         onSubmit={handleSubmit}
       >
@@ -136,7 +136,7 @@ const ContactForm = () => {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="bg-gradient-to-r font-glory from-blue-400 to-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-gradient-to-r font-poppins from-blue-400 to-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Send Message
           </button>

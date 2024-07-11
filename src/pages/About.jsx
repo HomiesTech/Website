@@ -7,7 +7,7 @@ const About = () => {
   return (
     <section style={{ background: "white" }}>
       <div className="mx-auto align-middle justify-center pt-16 md:mt-16 md:pt-16 px-4 md:px-0">
-        <h1 className="text-3xl text-black text-center font-bold uppercase font-glory ">
+        <h1 className="text-3xl text-black text-center font-bold uppercase font-poppins ">
           ABOUT
         </h1>
         <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>
@@ -59,7 +59,7 @@ const About = () => {
       </div>
 
       <div className="flex justify-center pt-12 md:pt-16 p-10">
-        <button className="border-2 font-glory text-xl font-bold px-8 py-2 border-blue-600 text-black text-center rounded-md">
+        <button className="border-2 font-poppins text-xl font-bold px-8 py-2 border-blue-600 text-black text-center rounded-md">
           Learn More
         </button>
       </div>

@@ -15,15 +15,15 @@ export default function Features() {
   return (
     <section className="mt-2 pt-[1.5rem] pb-[1.5rem] bg-white">
       <div className="mx-auto align-middle justify-center pt-2 md:pt-16 px-4 md:px-0">
-        <h1 className="text-2xl text-black text-center font-bold uppercase font-glory">
+        <h1 className="text-2xl text-black text-center font-bold uppercase font-poppins">
           Features
         </h1>
         <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6" />
-        <h1 className="text-4xl text-black text-center font-bold uppercase font-glory">
+        <h1 className="text-4xl text-black text-center font-bold uppercase font-poppins">
           Awesome Features
         </h1>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4 md:p-10">
         {[
           { Icon: VisibilityIcon, title: "High Resolution" },
           { Icon: LayersIcon, title: "Retina Ready" },
@@ -50,10 +50,10 @@ export default function Features() {
       {/* ScreenShot Section */}
       <div className="flex flex-col lg:flex-row items-center justify-center m-10 p-10 space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="w-full lg:w-2/3">
-          <p className="text-blue-600 font-bold text-2xl m-2 font-glory">
+          <p className="text-blue-600 font-bold text-2xl m-2 font-poppins">
             ScreenShot
           </p>
-          <h1 className="text-3xl lg:text-5xl text-black font-bold m-2 font-glory">
+          <h1 className="text-2xl lg:text-4xl text-black font-bold m-2 font-poppins">
             User Friendly Interface And Very Easy To Use Fitness App
           </h1>
           <p className="text-gray-500 m-2 p-4 font-poppins">
@@ -74,7 +74,7 @@ export default function Features() {
             sit
           </p>
           <div className="pt-12 md:pt-16 p-6">
-            <button className="px-8 py-4 bg-gradient-to-r font-glory text-xl font-bold from-blue-400 to-blue-700 text-black text-center rounded-md">
+            <button className="px-8 py-4 bg-gradient-to-r font-poppins text-xl font-bold from-blue-400 to-blue-700 text-black text-center rounded-md">
               Read More
             </button>
           </div>
@@ -89,7 +89,7 @@ export default function Features() {
           <p className="text-xl text-blue-600 font-flory font-bold text-center">
             How It Works
           </p>
-          <h1 className="text-3xl lg:text-5xl font-bold text-center font-glory">
+          <h1 className="text-2xl lg:text-4xl font-bold text-center font-poppins">
             3 Easy Steps
           </h1>
         </div>
