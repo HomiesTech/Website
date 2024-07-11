@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../assets/wave2.svg";
+import bg from "../assets/wave.svg";
 import HomeIcon from "@mui/icons-material/Home";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
@@ -9,7 +9,7 @@ const Footer = () => {
       className="text-white py-10 w-full  pt-[15rem]"
       style={{
         backgroundImage: `url('${bg}')`,
-        backgroundSize: "cover", // Adjust this to 'contain' or specific size as needed
+        backgroundSize: "cover",
 
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center bottom",
