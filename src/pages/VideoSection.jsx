@@ -3,6 +3,12 @@ import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 
 const VideoSection = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
+  function handleHoverEnter() {
+    setIsVideoVisible(true);
+  }
+  function handleHoverLeave() {
+    setIsVideoVisible(false);
+  }
 
   return (
     <section className="w-auto relative flex flex-col items-center justify-center py-2">
@@ -16,6 +22,8 @@ const VideoSection = () => {
         className={`h-[25rem] w-full flex items-center justify-center ${
           isVideoVisible ? "bg-transparent" : "bg-blue-700 bg-opacity-35"
         }`}
+        onMouseEnter={handleHoverEnter}
+        onMouseLeave={handleHoverLeave}
       >
         {isVideoVisible ? (
           <iframe
