@@ -11,11 +11,15 @@ const About = () => {
           ABOUT
         </h1>
         <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>
-        <div className="text-center mx-auto max-w-2xl text-gray-500 font-poppins">
-          <p>
-            Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
-            viverra. Fusce sit amet lorem faucibus, vestibulum ante in, pharetra
-            ante.
+        <div className=" text-center mx-auto max-w-6xl text-gray-500 font-poppins">
+          <p className="text-justify">
+            At Homenetics, we specialize in converting ordinary homes into smart
+            home through innovative IOT solutions. Our advanced system
+            seamlessly integrates with your existing appliances, allowing you to
+            control and monitor them from a single, user-friendly mobile app. No
+            need to replace your current devices – Our Technology will upgrade
+            them, bringing new levels of automation and intelligence to your
+            living space.
           </p>
         </div>
       </div>
@@ -25,7 +29,7 @@ const About = () => {
             <SupportIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
-            Support
+            Affordable
           </h3>
           <p className="text-center text-gray-500 p-2 m-2">
             Phasellus lobortis justo a magna facilisis, in commodo tellus
@@ -37,7 +41,7 @@ const About = () => {
             <PhoneAndroidIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
-            Cross-Platform
+            Realiable
           </h3>
           <p className="text-center text-gray-500 p-2 m-2">
             Phasellus lobortis justo a magna facilisis, in commodo tellus
@@ -49,7 +53,7 @@ const About = () => {
             <BoltIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
-            Fast
+            Accessible
           </h3>
           <p className="text-center text-gray-500 p-2 m-2">
             Phasellus lobortis justo a magna facilisis, in commodo tellus
