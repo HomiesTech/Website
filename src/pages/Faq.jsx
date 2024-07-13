@@ -44,7 +44,7 @@ const Faq = () => {
       <div className="container mx-auto py-5 px-5">
         <div className="text-center mb-12">
           <div className="mx-auto align-middle justify-center pt-12 md:pt-16 px-4 md:px-0">
-            <h1 className="text-4xl text-black text-center font-bold uppercase font-glory">
+            <h1 className="text-3xl text-black text-center font-bold uppercase font-poppins">
               Frequently Asked Questions
             </h1>
             <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>

@@ -11,10 +11,9 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md fixed top-0 w-full z-20">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 font-poppins">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button */}
             <button
               type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -93,14 +92,13 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu, toggle className hidden */}
       <div className={`sm:hidden ${isOpen ? "block" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
           <ScrollLink
             to="home"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-purple-700 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="cursor-pointer text-blue-700 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium "
             onClick={toggleMenu}
           >
             Home
@@ -109,7 +107,7 @@ export default function Navbar() {
             to="about"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
             onClick={toggleMenu}
           >
             About
@@ -118,7 +116,7 @@ export default function Navbar() {
             to="features"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
             onClick={toggleMenu}
           >
             Features
@@ -127,34 +125,26 @@ export default function Navbar() {
             to="pricing"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
             onClick={toggleMenu}
           >
             Pricing
           </ScrollLink>
           <ScrollLink
-            to="testimonials"
+            to="download"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
             onClick={toggleMenu}
           >
-            Testimonials
+            Download App
           </ScrollLink>
-          <ScrollLink
-            to="team"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
-            onClick={toggleMenu}
-          >
-            Team
-          </ScrollLink>
+
           <ScrollLink
             to="faq"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
             onClick={toggleMenu}
           >
             FAQ
@@ -163,7 +153,7 @@ export default function Navbar() {
             to="contact"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-purple-700 block px-3 py-2 rounded-md text-base font-medium"
+            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
             onClick={toggleMenu}
           >
             Contact

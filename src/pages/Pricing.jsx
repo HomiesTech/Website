@@ -42,11 +42,11 @@ const Pricing = () => {
 
   return (
     <div className="flex flex-col items-center justify-center pt-16 px-4 md:px-10 lg:px-20">
-      <div className="text-center font-glory">
-        <h2 className="text-3xl font-bold text-blue-600">Pricing Plan</h2>
-        <h1 className="text-5xl font-bold mt-2">Choose Your Plan</h1>
+      <div className="text-center font-poppins">
+        <h2 className="text-2xl font-bold text-blue-600">Pricing Plan</h2>
+        <h1 className="text-4xl font-bold mt-2">Choose Your Plan</h1>
       </div>
-      <div className="flex justify-center mt-6 font-glory text-xl">
+      <div className="flex justify-center mt-6 font-poppins text-xl">
         <button
           className={`py-2 px-4 rounded-l-full ${
             isMonthly ? "bg-blue-600 text-white" : "bg-gray-200 text-gray-600"
@@ -85,7 +85,7 @@ const Pricing = () => {
                 </li>
               ))}
             </ul>
-            <button className="mt-6 py-2 px-4 bg-gradient-to-r text-xl font-bold from-blue-400 to-blue-700 text-black rounded-full hover:bg-purple-800 transition duration-200">
+            <button className="mt-6 py-2 px-4 bg-gradient-to-r text-xl font-bold from-blue-400 to-blue-700 text-white rounded-md hover:bg-purple-800 transition duration-200">
               Get Started
             </button>
           </div>

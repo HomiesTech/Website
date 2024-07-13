@@ -35,10 +35,10 @@ export default function DownloadSection() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-          <h5 className="text-3xl text-blue-500 font-bold font-glory">
+          <h5 className="text-2xl text-blue-500 font-bold font-poppins">
             Download
           </h5>
-          <h1 className="mb-4 text-3xl md:text-5xl font-bold font-glory">
+          <h1 className="mb-4 text-2xl md:text-4xl font-bold font-poppins">
             Download The Latest Version Of Our App
           </h1>
           <p className="mb-4 font-poppins">
@@ -46,7 +46,7 @@ export default function DownloadSection() {
             labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem
             sit clita duo justo eirmod magna dolore erat amet
           </p>
-          <div className="flex flex-wrap justify-center md:justify-start font-glory text-xl">
+          <div className="flex flex-wrap justify-center md:justify-start font-poppins text-md">
             <div className="mt-4 md:mt-8 p-2">
               <a
                 href="#"
