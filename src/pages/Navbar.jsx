@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "../assets/homies-logo.svg";
+import logo from "../assets/HomiesLogo.png";
 import MenuIcon from "@mui/icons-material/Menu";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,8 +10,12 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const linkClass =
+    "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium ";
+  const activeClass = "underline underline-offset-4 text-orange-500 ";
+
   return (
-    <nav className="bg-white shadow-md fixed top-0 w-full z-20">
+    <nav className="bg-white shadow-md fixed top-0 w-full z-20 overflow-hidden transition-all duration-300 ease-in-out">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 font-poppins">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -24,7 +29,7 @@ export default function Navbar() {
           </div>
           <div className="flex-1 flex items-center justify-between">
             <div className="flex-shrink-0">
-              {/* <img className="h-8 w-auto" src={logo} alt="HomiesTech" /> */}
+              <img className="h-8 w-auto" src={logo} alt="HomiesTech" />
             </div>
             <div className="hidden sm:flex sm:flex-1 sm:justify-center">
               <div className="flex space-x-4">
@@ -32,7 +37,9 @@ export default function Navbar() {
                   to="home"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-blue-600 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
+                  className={linkClass}
+                  activeClass={activeClass}
+                  spy={true}
                 >
                   Home
                 </ScrollLink>
@@ -40,7 +47,9 @@ export default function Navbar() {
                   to="about"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
+                  className={linkClass}
+                  activeClass={activeClass}
+                  spy={true}
                 >
                   About
                 </ScrollLink>
@@ -48,7 +57,9 @@ export default function Navbar() {
                   to="features"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
+                  className={linkClass}
+                  activeClass={activeClass}
+                  spy={true}
                 >
                   Features
                 </ScrollLink>
@@ -57,24 +68,30 @@ export default function Navbar() {
                   to="pricing"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
+                  className={linkClass}
+                  activeClass={activeClass}
+                  spy={true}
                 >
                   Pricing
                 </ScrollLink>
                 <ScrollLink
-                  to="download"
+                  to="pricing"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
+                  className={linkClass}
+                  activeClass={activeClass}
+                  spy={true}
                 >
-                  Download App
+                  Career
                 </ScrollLink>
 
                 <ScrollLink
                   to="faq"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
+                  className={linkClass}
+                  activeClass={activeClass}
+                  spy={true}
                 >
                   FAQ
                 </ScrollLink>
@@ -82,11 +99,25 @@ export default function Navbar() {
                   to="contact"
                   smooth={true}
                   duration={500}
-                  className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
+                  className={linkClass}
+                  activeClass={activeClass}
+                  spy={true}
                 >
                   Contact
                 </ScrollLink>
               </div>
+            </div>
+            <div className="hidden sm:flex sm:items-center">
+              <ScrollLink
+                to="download"
+                smooth={true}
+                duration={500}
+                className={linkClass}
+                activeClass={activeClass}
+                spy={true}
+              >
+                Download App
+              </ScrollLink>
             </div>
           </div>
         </div>
@@ -98,7 +129,9 @@ export default function Navbar() {
             to="home"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-blue-700 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium "
+            className={`${linkClass} text-blue-700 hover:bg-blue-700 block`}
+            activeClass={activeClass}
+            spy={true}
             onClick={toggleMenu}
           >
             Home
@@ -107,7 +140,9 @@ export default function Navbar() {
             to="about"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+            className={`${linkClass} block`}
+            activeClass={activeClass}
+            spy={true}
             onClick={toggleMenu}
           >
             About
@@ -116,7 +151,9 @@ export default function Navbar() {
             to="features"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+            className={`${linkClass} block`}
+            activeClass={activeClass}
+            spy={true}
             onClick={toggleMenu}
           >
             Features
@@ -125,26 +162,20 @@ export default function Navbar() {
             to="pricing"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+            className={`${linkClass} block`}
+            activeClass={activeClass}
+            spy={true}
             onClick={toggleMenu}
           >
             Pricing
           </ScrollLink>
           <ScrollLink
-            to="download"
-            smooth={true}
-            duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
-            onClick={toggleMenu}
-          >
-            Download App
-          </ScrollLink>
-
-          <ScrollLink
             to="faq"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-700 block px-3 py-2 rounded-md text-base font-medium"
+            className={`${linkClass} block`}
+            activeClass={activeClass}
+            spy={true}
             onClick={toggleMenu}
           >
             FAQ
@@ -153,10 +184,23 @@ export default function Navbar() {
             to="contact"
             smooth={true}
             duration={500}
-            className="cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium"
+            className={`${linkClass} block`}
+            activeClass={activeClass}
+            spy={true}
             onClick={toggleMenu}
           >
             Contact
+          </ScrollLink>
+          <ScrollLink
+            to="download"
+            smooth={true}
+            duration={500}
+            className={`${linkClass} block`}
+            activeClass={activeClass}
+            spy={true}
+            onClick={toggleMenu}
+          >
+            Download App
           </ScrollLink>
         </div>
       </div>
