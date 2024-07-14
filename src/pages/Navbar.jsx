@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   const linkClass =
-    "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium ";
+    "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-30";
   const activeClass = "underline underline-offset-4 text-orange-500 ";
 
   return (
