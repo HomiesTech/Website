@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 
 import phoneFrame from "../assets/screenshot-frame.png";
-import image1 from "../assets/screenshot-1.png";
-import image2 from "../assets/screenshot-2.png";
-import image3 from "../assets/screenshot-3.png";
-import image4 from "../assets/screenshot-4.png";
-import image5 from "../assets/screenshot-5.png";
+/* import image1 from "../assets/image1.jpeg";
+import image2 from "../assets/image2.jpeg";
+import image3 from "../assets/image3.jpeg";
+import image4 from "../assets/image4.jpeg";
+import image5 from "../assets/image5.jpeg"; */
 
 const images = [image1, image2, image3, image4, image5];
 
@@ -21,13 +21,13 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="relative w-72 h-[36rem] mx-auto">
+    <div className="relative w-72 h-[37rem] mx-auto">
       <img
         src={phoneFrame}
         alt="Phone Frame"
         className="absolute w-full h-full top-0 left-0 z-10 pointer-events-none"
       />
-      <div className="absolute w-[88%] h-[98%] top-[2%] left-[5%] flex items-center justify-center overflow-hidden rounded-3xl">
+      <div className="absolute w-[88%] h-[100%] top-[1%] left-[5%] flex items-center justify-center overflow-hidden rounded-3xl">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
