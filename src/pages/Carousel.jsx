@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import phoneFrame from "../assets/screenshot-frame.png";
-import image1 from "../assets/screenshot-1.jpeg";
-import image2 from "../assets/screenshot-2.jpeg";
+import image1 from "../assets/image1.jpeg";
+import image2 from "../assets/image2.jpeg";
 import image3 from "../assets/image3.jpeg";
 import image4 from "../assets/image4.jpeg";
 import image5 from "../assets/image5.jpeg";
