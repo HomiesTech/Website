@@ -33,7 +33,7 @@ export default function Features() {
           },
           {
             Icon: LayersIcon,
-            title: "Editable Data",
+            title: "Editable Profile",
             description:
               "The customer data (includes SignUp, Login, Personal details) are easily editable at the users end",
           },

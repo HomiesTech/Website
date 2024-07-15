@@ -12,9 +12,11 @@ export default function Navbar() {
 
   const linkClass =
 
+
     "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out  ";
   const activeClass =
     "  animate-spin border-b-4  border-blue-600 text-black shadow-md shadow-blue-600";
+
 
 
   return (
