@@ -1,8 +1,8 @@
 import React from "react";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import SupportIcon from "@mui/icons-material/Support";
-import BoltIcon from "@mui/icons-material/Bolt";
 
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+import AccessibilityIcon from "@mui/icons-material/Accessibility";
 const About = () => {
   return (
     <section style={{ background: "white" }}>
@@ -24,7 +24,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto flex flex-wrap justify-center pt-12 md:pt-16 px-4 md:px-8 font-poppins">
         <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8">
           <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-[8rem] w-[8rem]">
-            <SupportIcon style={{ fontSize: 60 }} />
+            <CurrencyRupeeIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
             Affordable
@@ -36,7 +36,7 @@ const About = () => {
         </div>
         <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8">
           <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-[8rem] w-[8rem]">
-            <PhoneAndroidIcon style={{ fontSize: 60 }} />
+            <VerifiedUserIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
             Reliable
@@ -48,7 +48,7 @@ const About = () => {
         </div>
         <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8">
           <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-[8rem] w-[8rem]">
-            <BoltIcon style={{ fontSize: 60 }} />
+            <AccessibilityIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 m-2">
             Accessible

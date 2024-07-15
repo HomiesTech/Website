@@ -19,7 +19,7 @@ const Pricing = () => {
       features: ["Accessible", "Reliable", "Easy To Use", "Affordable"],
     },
     {
-      title: "Custom Card",
+      title: "Custom",
       price: "APR",
       features: ["Accessible", "Reliable", "Easy To Use", "Affordable"],
     },
@@ -37,7 +37,7 @@ const Pricing = () => {
             <div className="bg-blue-50 border-2 border-gray-100 p-10 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-500 ease-in-out">
               <h3 className="text-xl font-bold text-blue-700">{plan.title}</h3>
               <p className="text-gray-600">Powerful & Awesome Features</p>
-              <h2 className="text-4xl font-bold my-4">
+              <h2 className="text-3xl font-bold my-4">
                 Rs.{plan.price}
                 <span className="text-xl font-normal">/ {plan.title}</span>
               </h2>

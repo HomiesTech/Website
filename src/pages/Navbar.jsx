@@ -11,8 +11,9 @@ export default function Navbar() {
   };
 
   const linkClass =
-    "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
-  const activeClass = "underline underline-offset-4 text-blue-400";
+    "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out ";
+  const activeClass =
+    "underline underline-offset-4 text-orange-600 shadow-[0_35px_60px_-15px_rgba(23,110,340,0.3)]  ";
 
   return (
     <nav className="bg-white shadow-md fixed top-0 w-full z-20 overflow-hidden transition-all duration-300 ease-in-out">
