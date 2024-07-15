@@ -11,8 +11,9 @@ export default function Navbar() {
   };
 
   const linkClass =
-    "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-30";
-  const activeClass = "underline underline-offset-4 text-orange-500 ";
+    "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out  ";
+  const activeClass =
+    "  animate-spin border-b-4  border-blue-600 text-black shadow-md shadow-blue-600";
 
   return (
     <nav className="bg-white shadow-md fixed top-0 w-full z-20 overflow-hidden transition-all duration-300 ease-in-out">
@@ -29,7 +30,7 @@ export default function Navbar() {
           </div>
           <div className="flex-1 flex items-center justify-between">
             <div className="flex-shrink-0">
-              <img className="h-8 w-auto" src={logo} alt="HomiesTech" />
+              <img className="h-[2rem] w-auto" src={logo} alt="HomiesTech" />
             </div>
             <div className="hidden sm:flex sm:flex-1 sm:justify-center">
               <div className="flex space-x-4">
@@ -75,11 +76,11 @@ export default function Navbar() {
                   Pricing
                 </ScrollLink>
                 <ScrollLink
-                  to="pricing"
+                  to="career"
                   smooth={true}
                   duration={500}
                   className={linkClass}
-                  activeClass={activeClass}
+                  //activeClass={activeClass}
                   spy={true}
                 >
                   Career
@@ -112,7 +113,10 @@ export default function Navbar() {
                 to="download"
                 smooth={true}
                 duration={500}
-                className={linkClass}
+                className={
+                  linkClass +
+                  "animate-bounce bg-blue-600 shadow-md shadow-blue-600 text-white"
+                }
                 activeClass={activeClass}
                 spy={true}
               >
