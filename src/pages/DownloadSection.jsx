@@ -1,9 +1,9 @@
 import React from "react";
 import AppleIcon from "@mui/icons-material/Apple";
 import AdbIcon from "@mui/icons-material/Adb";
-import image1 from "../assets/screenshot-1.png";
-import image2 from "../assets/screenshot-2.png";
-import image3 from "../assets/screenshot-3.png";
+import image1 from "../assets/image1.jpeg";
+import image2 from "../assets/image2.jpeg";
+import image3 from "../assets/image3.jpeg";
 
 export default function DownloadSection() {
   return (
