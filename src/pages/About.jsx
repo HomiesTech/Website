@@ -64,15 +64,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      <div className="flex justify-center pt-12 md:pt-16 px-4 md:px-8">
-        <button
-          className="border-2 font-poppins text-xl font-bold px-8 py-2 border-blue-600 text-black text-center rounded-md"
-          onClick={handleContent}
-        >
-          Learn More
-        </button>
-      </div>
     </section>
   );
 };

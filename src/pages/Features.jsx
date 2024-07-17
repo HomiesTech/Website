@@ -19,7 +19,7 @@ export default function Features() {
           Features
         </h1>
         <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6" />
-        <h1 className="text-4xl text-black text-center font-bold uppercase font-poppins">
+        <h1 className="text-3xl text-blue-600 text-center font-bold uppercase font-poppins">
           Awesome Features
         </h1>
       </div>
