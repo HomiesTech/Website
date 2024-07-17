@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Features from "./pages/Features";
 import Faq from "./pages/Faq";
-import bgImage from "./assets/bgvideo.jpg";
 import VideoSection from "./pages/VideoSection";
 import Pricing from "./pages/Pricing";
 import Testimonial from "./pages/Testimonial";
@@ -41,6 +40,9 @@ function App() {
       <section id="download" className="mt-20">
         <DownloadSection />
       </section>
+      {/* <section id="testimonial" className="mt-20">
+        <Testimonial />
+      </section> */}
       <section id="faq" className="mt-20">
         <Faq />
       </section>

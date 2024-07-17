@@ -1,15 +1,15 @@
 import React from "react";
 import "tw-elements";
-import VisibilityIcon from "@mui/icons-material/Visibility";
-import LayersIcon from "@mui/icons-material/Layers";
-import BorderColorIcon from "@mui/icons-material/BorderColor";
-import ShieldIcon from "@mui/icons-material/Shield";
-import CloudIcon from "@mui/icons-material/Cloud";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import DoneIcon from "@mui/icons-material/Done";
-import SettingsIcon from "@mui/icons-material/Settings";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import Carousel from "./Carousel";
+import InstallMobileIcon from "@mui/icons-material/InstallMobile";
+import AccessibilityIcon from "@mui/icons-material/Accessibility";
+import Person2Icon from "@mui/icons-material/Person2";
+import WifiIcon from "@mui/icons-material/Wifi";
+import Diversity1Icon from "@mui/icons-material/Diversity1";
+import RecommendIcon from "@mui/icons-material/Recommend";
 
 export default function Features() {
   return (
@@ -26,40 +26,40 @@ export default function Features() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4 md:p-10">
         {[
           {
-            Icon: VisibilityIcon,
+            Icon: AccessibilityIcon,
             title: "Easily Accessible",
             description:
-              "Our product is easily accessible and easily installable as per the customer requirements",
+              "Manage all home functions conveniently through our user-friendly mobile app, ensuring effortless control at your fingertips",
           },
           {
-            Icon: LayersIcon,
+            Icon: Person2Icon,
             title: "Editable Profile",
             description:
-              "The customer data (includes SignUp, Login, Personal details) are easily editable at the users end",
+              "Personalize your smart home experience by customizing room names and other details with ease, adapting to your preferences seamlessly.",
           },
           {
-            Icon: BorderColorIcon,
+            Icon: WifiIcon,
             title: "Multiple Connection",
             description:
-              "Multiple connection were also supported by the app and the product as per the user needs",
+              "Seamlessly integrate and control every room in your home via robust WiFi connectivity, enhancing accessibility and convenience.",
           },
           {
-            Icon: ShieldIcon,
+            Icon: Diversity1Icon,
             title: "User Friendly",
             description:
-              "The app is user friendly and can be accessible by anyone in the house very easily. Just a tap and go          ",
-          },
-          {
-            Icon: CloudIcon,
-            title: "Customizable Interface",
-            description:
-              "The Interface is customizable as per the user’s need. It will help out the user to name the tabs for the devices as per the user’s need",
+              "Designed for simplicity, our system ensures that anyone can operate and enjoy the benefits of smart home technology without complexity",
           },
           {
             Icon: PhoneAndroidIcon,
-            title: "24*7 Support System",
+            title: "Customizable Interface",
             description:
-              "If any problem occur in between or after installation of the product our 24*7 support system will help you out. Our support team will look into the matter of the issue and then a technician will arrive to fix the issue",
+              "Tailor your home environment with personalized backgrounds and icons for each room within our intuitive app, reflecting your unique style and needs.",
+          },
+          {
+            Icon: RecommendIcon,
+            title: "Support System",
+            description:
+              "Access prompt assistance with our dedicated support system, offering reliable help via email and phone directly from the app whenever you need it.",
           },
         ].map(({ Icon, title, description }, index) => (
           <div
@@ -125,7 +125,7 @@ export default function Features() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-2 p-2 mt-8 pt-8">
           {[
             {
-              Icon: SettingsIcon,
+              Icon: InstallMobileIcon,
               title: "Install The App",
               description:
                 "The app is easy to use as you just have to download the app from the website/app store/playstore create an account with username and password.Now connect the app to the dedicated WIFI and discover the device",

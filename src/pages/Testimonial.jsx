@@ -7,7 +7,8 @@ const testimonials = [
     id: 1,
     name: "Client Name",
     profession: "Profession",
-    image: "https://via.placeholder.com/85",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYwRY6DKkO8lNsWhJvd_M6WLO2gFZ5Ap8t0RAR1WCNAI9V4N52KKVNCJRvkPM_C0hnctY&usqp=CAU",
     rating: 5,
     text: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
   },
@@ -15,7 +16,8 @@ const testimonials = [
     id: 2,
     name: "Client Name",
     profession: "Profession",
-    image: "https://via.placeholder.com/85",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYwRY6DKkO8lNsWhJvd_M6WLO2gFZ5Ap8t0RAR1WCNAI9V4N52KKVNCJRvkPM_C0hnctY&usqp=CAU",
     rating: 5,
     text: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
   },
@@ -23,7 +25,8 @@ const testimonials = [
     id: 3,
     name: "Client Name",
     profession: "Profession",
-    image: "https://via.placeholder.com/85",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYwRY6DKkO8lNsWhJvd_M6WLO2gFZ5Ap8t0RAR1WCNAI9V4N52KKVNCJRvkPM_C0hnctY&usqp=CAU",
     rating: 5,
     text: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
   },
@@ -31,7 +34,8 @@ const testimonials = [
     id: 4,
     name: "Client Name",
     profession: "Profession",
-    image: "https://via.placeholder.com/85",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYwRY6DKkO8lNsWhJvd_M6WLO2gFZ5Ap8t0RAR1WCNAI9V4N52KKVNCJRvkPM_C0hnctY&usqp=CAU",
     rating: 5,
     text: "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
   },
@@ -42,10 +46,8 @@ const Testimonial = () => {
     <section className="m-[2rem] p-[2rem]">
       <div className="container mx-auto py-5 px-5 " id="review">
         <div className="text-center mb-12">
-          <h5 className="text-purple-600 text-2xl font-semibold">
-            Testimonial
-          </h5>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-5">
+          <h5 className="text-blue-600 text-2xl font-semibold">Testimonial</h5>
+          <h1 className="text-4xl md:text-4xl font-bold text-gray-800 mb-5">
             What Say Our Clients!
           </h1>
         </div>
@@ -54,7 +56,7 @@ const Testimonial = () => {
             {testimonials.map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="testimonial-item rounded p-4 bg-white shadow-lg"
+                className="testimonial-item rounded bg-blue-50 p-4 font-poppins shadow-lg transition-transform transform hover:scale-105 duration-500 ease-in-out"
               >
                 <div className="flex items-center mb-4">
                   <img
