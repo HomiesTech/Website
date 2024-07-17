@@ -29,36 +29,37 @@ export default function Features() {
             Icon: AccessibilityIcon,
             title: "Easily Accessible",
             description:
-              "Control all functions seamlessly through our intuitive mobile app.",
+              "Manage all home functions conveniently through our user-friendly mobile app, ensuring effortless control at your fingertips",
           },
           {
             Icon: Person2Icon,
             title: "Editable Profile",
             description:
-              "Customize room names and personal details effortlessly.",
+              "Personalize your smart home experience by customizing room names and other details with ease, adapting to your preferences seamlessly.",
           },
           {
             Icon: WifiIcon,
             title: "Multiple Connection",
-            description: "Connect with every room via robust WiFi integration.",
+            description:
+              "Seamlessly integrate and control every room in your home via robust WiFi connectivity, enhancing accessibility and convenience.",
           },
           {
             Icon: Diversity1Icon,
             title: "User Friendly",
             description:
-              "Enjoy straightforward operation suitable for all users.",
+              "Designed for simplicity, our system ensures that anyone can operate and enjoy the benefits of smart home technology without complexity",
           },
           {
             Icon: PhoneAndroidIcon,
             title: "Customizable Interface",
             description:
-              "Help out the user to name the tabs for the devices as per the user’s need",
+              "Tailor your home environment with personalized backgrounds and icons for each room within our intuitive app, reflecting your unique style and needs.",
           },
           {
             Icon: RecommendIcon,
             title: "Support System",
             description:
-              "Access help easily with dedicated support via email and phone directly from the app.",
+              "Access prompt assistance with our dedicated support system, offering reliable help via email and phone directly from the app whenever you need it.",
           },
         ].map(({ Icon, title, description }, index) => (
           <div
