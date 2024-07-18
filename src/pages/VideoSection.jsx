@@ -36,7 +36,7 @@ const VideoSection = () => {
         ) : (
           <div className="flex flex-col items-center justify-center">
             <p className="text-4xl font-bold text-blue-600 mb-4 uppercase font-poppins">
-              Click to Watch Demo
+              Click to Watch
             </p>
             <button
               className="bg-blue-600 text-white py-3 px-3 rounded flex items-center justify-center"

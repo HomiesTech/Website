@@ -72,13 +72,6 @@ const Faq = () => {
               Frequently Asked Questions
             </h1>
             <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>
-            <div className="text-center mx-auto max-w-2xl text-gray-500  font-poppins">
-              <p>
-                Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
-                viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
-                pharetra ante.
-              </p>
-            </div>
           </div>
         </div>
         <div className="space-y-4">
@@ -92,19 +85,19 @@ const Faq = () => {
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex justify-between items-center">
-                  <h2 className="text-lg font-medium text-black">
+                  <h2 className="text-lg font-medium text-blue-50">
                     {item.question}
                   </h2>
 
-                  <span className="text-black">
+                  <span className="text-white">
                     {activeIndex === index ? "-" : "+"}
                   </span>
                 </div>
               </button>
               {activeIndex === index && (
                 <div className="px-6 pb-4 ">
-                  <hr className="border-black"></hr>
-                  <p className="text-black ">{item.answer}</p>
+                  <hr className="border-white"></hr>
+                  <p className="text-blue-50 ">{item.answer}</p>
                 </div>
               )}
             </div>

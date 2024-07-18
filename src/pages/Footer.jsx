@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="text-white w-full bg-blue-600 mt-[16rem]">
       <div className="container mx-auto py-16 px-4 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-start">
-          <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 lg:mb-0">
+          <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 lg:mb-0 ">
             <h2 className="text-xl font-bold mb-2 text-blue-100 underline">
               Connect With Us
             </h2>

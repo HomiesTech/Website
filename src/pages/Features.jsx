@@ -148,13 +148,13 @@ export default function Features() {
               key={index}
               className="relative bg-blue-50 p-6 rounded-md flex flex-col items-center"
             >
-              <div className="absolute -top-10 bg-gradient-to-r from-blue-400 to-blue-700 rounded-full w-20 h-20 flex items-center justify-center">
+              <div className=" bg-gradient-to-r from-blue-400 to-blue-700 rounded-full w-20 h-20 flex items-center justify-center">
                 <Icon className="text-white text-4xl " />
               </div>
               <h1 className="text-xl font-bold text-center mt-10">{title}</h1>
-              <p className="text-gray-500  text-justify p-2 m-2 ">
+              {/*   <p className="text-gray-500  text-justify p-2 m-2 ">
                 {description}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>
