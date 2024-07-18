@@ -2,29 +2,53 @@ import React, { useState } from "react";
 
 const faqData = [
   {
-    question: "What is your return policy?",
+    question: "What is the product used for?",
     answer:
-      "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately, we can’t offer you a refund or exchange.",
+      "Our home automation device allows you to control and automate various devices in your home, transforming into a smart house. Manage lights, fans, Ac’s and other electronic home appliances. Which can be controlled by our mobile application.",
   },
   {
-    question: "How do I track my order?",
+    question: "From where I can download the application?",
     answer:
-      "Once your order is shipped, we will send you an email with the tracking number and a link to track your order.",
+      "You can download our application from our website and through playstore and appstore.",
   },
   {
-    question: "Can I change or cancel my order?",
+    question: "How can I purchase the device?",
     answer:
-      "Yes, you can change or cancel your order within 24 hours of placing it. Please contact our customer service team for assistance.",
+      "You can just mail us regarding your needs. Or you can call at our phone number to place an order as per your home requirements.",
   },
   {
-    question: "Do you ship internationally?",
+    question: "How do you add devices to the app?",
     answer:
-      "Yes, we ship to many countries around the world. Shipping charges and delivery times vary depending on the destination.",
+      "First you have to install the product at your room which you want to automate. Then download the application. When you open the app you have to first sign yourself up and connect it to your Wi-Fi and then you have to discover the device and all the devices connected to our product will be shown on the application all together.",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "How do I reset the password?",
     answer:
-      "We accept Visa, MasterCard, American Express, PayPal, and Apple Pay.",
+      "To reset your password, click on the 'Forgot Password' link on the login screen. You will receive an email with instructions on how to reset your password.",
+  },
+  {
+    question: "Is my data secure?",
+    answer:
+      "We prioritize your privacy and security. All communications between your app and our servers are encrypted, and we follow industry-standard security practices to protect your data.",
+  },
+  {
+    question: "What should I do if a device is not responding?",
+    answer: [
+      "If a device is not responding, try the following steps:",
+      <br></br>,
+      "- Ensure the device is powered on and connected to your Wi-Fi network.",
+      <br></br>,
+      "- Restart the device and the app.",
+      <br></br>,
+      "- Check for firmware updates for the device.",
+      <br></br>,
+      "- If the problem persists, refer to the troubleshooting section in the user manual or contact our support team.",
+    ],
+  },
+  {
+    question: "What if I have more questions or need support?",
+    answer:
+      "If you have any further questions or need assistance, please contact our customer support team through the Help section in the app or visit our support website.",
   },
 ];
 

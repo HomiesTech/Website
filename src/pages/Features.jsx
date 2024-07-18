@@ -74,7 +74,7 @@ export default function Features() {
           </div>
         ))}
       </div>
-      {/* ScreenShot Section */}
+      {/* ScreenShot Section 
       <div className="flex flex-col lg:flex-row items-center justify-center m-10 p-10 space-y-8 lg:space-y-0 lg:space-x-8">
         <div className="w-full lg:w-2/3">
           <p className="text-blue-600 font-bold text-2xl m-2 font-poppins">
@@ -103,7 +103,7 @@ export default function Features() {
             sit
           </p>
           <div className="pt-12 md:pt-16 p-6">
-            <button className="px-8 py-4 bg-gradient-to-r font-poppins text-xl font-bold from-blue-400 to-blue-700 text-black text-center rounded-md">
+            <button className="px-8 py-4 bg-gradient-to-r font-poppins text-xl font-bold from-blue-400 to-blue-700 text-white text-center rounded-md">
               Read More
             </button>
           </div>
@@ -112,6 +112,7 @@ export default function Features() {
           <Carousel />
         </div>
       </div>
+      */}
       {/* 3 Steps Section */}
       <div className="flex flex-col items-center justify-center p-10 m-10">
         <div>
@@ -151,7 +152,7 @@ export default function Features() {
                 <Icon className="text-white text-4xl " />
               </div>
               <h1 className="text-xl font-bold text-center mt-10">{title}</h1>
-              <p className="text-gray-500 text-center text-justify p-2 m-2 ">
+              <p className="text-gray-500  text-justify p-2 m-2 ">
                 {description}
               </p>
             </div>
