@@ -6,23 +6,23 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import XIcon from "@mui/icons-material/X";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="text-white w-full bg-blue-600 mt-[16rem] ">
+    <footer className="text-white w-full bg-blue-600 mt-[16rem]">
       <div className="container mx-auto py-16 px-4 md:px-8">
-        <div className="flex flex-row justify-between items-start">
+        <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 lg:mb-0">
-            <h2 className="text-xl font-bold mb-2 text-black">
+            <h2 className="text-xl font-bold mb-2 text-blue-100 underline">
               Connect With Us
             </h2>
-
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <a
                 href="https://github.com/prajaktakap00r"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white  p-3  hover:shadow-pink-200 transition duration-300"
+                className="text-white p-3 hover:shadow-pink-200 transition duration-300"
               >
                 <InstagramIcon /> Instagram
               </a>
@@ -51,32 +51,60 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full sm:w-1/2 lg:w-1/3 mb-8 lg:mb-0">
-            <h2 className="text-xl font-bold mb-2 text-black">Quick Links</h2>
+            <h2 className="text-xl font-bold mb-2 text-blue-100 underline">
+              Quick Links
+            </h2>
             <ul>
               <li className="mb-2 p-2">
-                <a href="home" className="hover:text-gray-300">
+                <ScrollLink
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  className="text-white underline"
+                  spy={true}
+                >
                   Home
-                </a>
+                </ScrollLink>
               </li>
               <li className="mb-2 p-2">
-                <a href="about" className="hover:text-gray-300">
+                <ScrollLink
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  className="text-white underline"
+                  spy={true}
+                >
                   About
-                </a>
+                </ScrollLink>
               </li>
               <li className="mb-2 p-2">
-                <a href="features" className="hover:text-gray-300">
+                <ScrollLink
+                  to="features"
+                  smooth={true}
+                  duration={500}
+                  className="text-white underline"
+                  spy={true}
+                >
                   Features
-                </a>
+                </ScrollLink>
               </li>
               <li className="mb-2 p-2">
-                <a href="contact" className="hover:text-gray-300">
+                <ScrollLink
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  className="text-white underline"
+                  spy={true}
+                >
                   Contact
-                </a>
+                </ScrollLink>
               </li>
             </ul>
           </div>
           <div className="w-full sm:w-1/2 lg:w-1/3">
-            <h2 className="text-xl font-bold mb-2 text-black">Address</h2>
+            <h2 className="text-xl font-bold mb-2 text-blue-100 underline">
+              Address
+            </h2>
             <p className="text-white mb-4 flex items-center">
               <HomeIcon className="mr-2 m-2" />
               SCO 106,1st Floor, Hermitage Office, Dhakoli-140603
