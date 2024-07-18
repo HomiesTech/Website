@@ -52,7 +52,7 @@ const Pricing = () => {
                 ))}
               </ul>
               <button className="mt-6 py-2 px-4 bg-gradient-to-r text-xl font-bold from-blue-400 to-blue-700 text-white rounded-md hover:bg-purple-800 transition duration-200">
-                Get Started
+                View Plan
               </button>
             </div>
           </div>

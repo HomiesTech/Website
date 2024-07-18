@@ -18,7 +18,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 bg-blue-500 p-8  md:p-10 lg:p-20 flex items-center justify-center">
+      <div className="w-full md:w-1/2 bg-blue-600 p-8  md:p-10 lg:p-20 flex items-center justify-center">
         <div className="relative mt-8 pt-[4rem] md:mt-0">
           <Carousel />
         </div>

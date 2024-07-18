@@ -30,8 +30,8 @@ const About = () => {
       </div>
 
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-center pt-12 md:pt-16 px-4 md:px-1 font-poppins">
-        <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-blue-100 p-2 rounded-md">
-          <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-32 w-32">
+        <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-blue-100 p-2 rounded-md md:m-2">
+          <div className="flex text-white items-center p-4 m-4 justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-32 w-32">
             <CurrencyRupeeIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 mt-4">
@@ -42,8 +42,8 @@ const About = () => {
             accessible to all socioeconomic classes.
           </p>
         </div>
-        <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-blue-100 p-2 rounded-md">
-          <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-32 w-32">
+        <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-blue-100 p-2 rounded-md md:m-2">
+          <div className="flex text-white items-center p-4 m-4 justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-32 w-32">
             <VerifiedUserIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 mt-4">
@@ -54,8 +54,8 @@ const About = () => {
             performance and peace of mind for users.
           </p>
         </div>
-        <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-blue-100 p-2 rounded-md">
-          <div className="flex text-white items-center justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-32 w-32">
+        <div className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-blue-100 p-2 rounded-md md:m-2">
+          <div className="flex text-white items-center p-4 m-4 justify-center rounded-full bg-gradient-to-r from-blue-400 to-blue-700 h-32 w-32">
             <AccessibilityIcon style={{ fontSize: 60 }} />
           </div>
           <h3 className="text-black text-center font-bold text-xl p-2 mt-4">
