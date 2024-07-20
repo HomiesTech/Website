@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/HomiesLogo.png";
 import MenuIcon from "@mui/icons-material/Menu";
+import "./VideoSection.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +13,7 @@ export default function Navbar() {
 
   const linkClass =
     "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out  ";
-  const activeClass =
-    "  animate-spin border-b-4  border-blue-600 text-black shadow-sm shadow-blue-600";
+  const activeClass = "  animate-spin border-b-4  border-blue-600 text-black ";
 
   return (
     <nav className="bg-white shadow-md fixed top-0 w-full z-20 overflow-hidden transition-all duration-300 ease-in-out">
@@ -115,7 +115,7 @@ export default function Navbar() {
                 duration={500}
                 className={
                   linkClass +
-                  "animate-bounce bg-blue-600 shadow-md shadow-blue-600 text-white"
+                  " bg-blue-600 shadow-md shadow-blue-600  animate-spin text-white  heartbeat"
                 }
                 activeClass={activeClass}
                 spy={true}
