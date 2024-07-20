@@ -27,7 +27,7 @@ const Footer = () => {
                 <InstagramIcon /> Instagram
               </a>
               <a
-                href="mailto:Homenetics_Official@homenetics.in"
+                href="https://github.com/homiestech"
                 className="text-black p-3 hover:shadow-pink-200 transition duration-300 hover:text-white"
               >
                 <GitHubIcon /> GitHub
