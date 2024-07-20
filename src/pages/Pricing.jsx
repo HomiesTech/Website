@@ -6,22 +6,22 @@ const Pricing = () => {
     {
       title: "1 BHK",
       price: "6999",
-      features: ["Accessible", "Reliable", "Easy To Use", "Affordable"],
+      features: ["1 Room", "1 Kitchen", "1 Hall", "1 Washroom", "1 Misleneous"],
     },
     {
       title: "2 BHK",
       price: "10999",
-      features: ["Accessible", "Reliable", "Easy To Use", "Affordable"],
+      features: ["2 Room", "1 Kitchen", "1 Hall", "2 Washroom", "2 Misleneous"],
     },
     {
       title: "3 BHK",
       price: "15999",
-      features: ["Accessible", "Reliable", "Easy To Use", "Affordable"],
+      features: ["3 Room", "1 Kitchen", "2 Hall", "3 Washroom", "3 Misleneous"],
     },
     {
       title: "Custom",
       price: "APR",
-      features: ["Accessible", "Reliable", "Easy To Use", "Affordable"],
+      features: ["X Room", "X Kitchen", "X Hall", "X Washroom", "X Misleneous"],
     },
   ];
 
@@ -36,10 +36,10 @@ const Pricing = () => {
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
             <div className="bg-blue-50 border-2 border-gray-100 p-10 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-500 ease-in-out">
               <h3 className="text-xl font-bold text-blue-700">{plan.title}</h3>
-              <p className="text-gray-600">Powerful & Awesome Features</p>
+
               <h2 className="text-3xl font-bold my-4">
-                Rs.{plan.price}
-                <span className="text-xl font-normal">/ {plan.title}</span>
+                ₹{plan.price}
+                <span className="text-xl font-normal"></span>
               </h2>
               <ul className="text-gray-600">
                 {plan.features.map((feature, i) => (
