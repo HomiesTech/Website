@@ -115,7 +115,7 @@ export default function Navbar() {
                 duration={500}
                 className={
                   linkClass +
-                  " bg-blue-600 shadow-md shadow-blue-600  animate-spin text-white  heartbeat"
+                  " bg-blue-600 shadow-md shadow-blue-600   text-white  heartbeat transition-transform transform hover:scale-110 duration-500 ease-in-out"
                 }
                 activeClass={activeClass}
                 spy={true}
