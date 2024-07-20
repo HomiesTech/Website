@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 
 const Home = () => {
   return (
-    <section className="flex flex-col md:flex-row h-screen">
+    <section className="flex flex-col md:flex-row h-screen md:h-[50rem]">
       <div className="w-full md:w-1/2 bg-white p-6 md:p-20 flex items-center justify-center">
         <div className="detail-box text-center md:text-left">
           <h2 className="text-2xl font-poppins md:text-2xl lg:text-6xl font-bold text-blue-600 mt-10 md:mt-0">
