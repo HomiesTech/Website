@@ -18,8 +18,15 @@ const faqData = [
   },
   {
     question: "How do you add devices to the app?",
-    answer:
-      "First you have to install the product at your room which you want to automate. Then download the application. When you open the app you have to first sign yourself up and connect it to your Wi-Fi and then you have to discover the device and all the devices connected to our product will be shown on the application all together.",
+    answer: [
+      "First you have to install the product at your room which you want to automate",
+      <br></br>,
+      "- Then download the application.",
+      <br></br>,
+      "- When you open the app you have to first sign yourself up and connect it to your Wi-Fi ",
+      <br></br>,
+      "- and then you have to discover the device and all the devices connected to our product will be shown on the application all together.",
+    ],
   },
   {
     question: "How do I reset the password?",
@@ -97,7 +104,9 @@ const Faq = () => {
               {activeIndex === index && (
                 <div className="px-6 pb-4 ">
                   <hr className="border-white"></hr>
-                  <p className="text-blue-50 ">{item.answer}</p>
+                  <p className="text-blue-600 bg-white m-2 p-2 rounded-md">
+                    {item.answer}
+                  </p>
                 </div>
               )}
             </div>
