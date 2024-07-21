@@ -20,11 +20,11 @@ const About = () => {
         <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6" />
         <div className="text-center mx-auto text-gray-500 font-poppins">
           <p>
-            Homenetics pioneers accessible smart home solutions, seamlessly
-            integrating IoT to elevate convenience and efficiency in every
-            household. Upgrade your home effortlessly with our advanced
-            technology, transforming existing appliances into intelligent assets
-            controlled through a simple mobile app.
+            Homenetics pioneers accessible smart home solutions, elevate
+            convenience and efficiency in every household. Upgrade your home
+            effortlessly with our advanced technology, transforming existing
+            appliances into intelligent assets controlled through a simple
+            mobile app.
           </p>
         </div>
       </div>
