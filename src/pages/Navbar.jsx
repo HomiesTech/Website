@@ -6,7 +6,7 @@ import "./VideoSection.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [navbarBg, setNavbarBg] = useState("bg-white"); // State for navbar background
+  const [navbarBg, setNavbarBg] = useState("bg-transparent");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -21,7 +21,7 @@ export default function Navbar() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > 0) {
-        setNavbarBg("bg-blue-700");
+        setNavbarBg("bg-blue-500");
       } else {
         setNavbarBg("bg-transparent");
       }
@@ -43,7 +43,7 @@ export default function Navbar() {
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleMenu}
             >
               <MenuIcon />
@@ -131,7 +131,7 @@ export default function Navbar() {
                 to="download"
                 smooth={true}
                 duration={500}
-                className={`${linkClass} bg-orange-500 shadow-md shadow-orange-500 text-white heartbeat transition-transform transform hover:scale-110 duration-500 ease-in-out`}
+                className={`${linkClass} bg-yellow-500 shadow-md shadow-yellow-500 text-white heartbeat transition-transform transform hover:scale-110 duration-500 ease-in-out`}
                 activeClass={activeClass}
                 spy={true}
               >
