@@ -62,14 +62,7 @@ const Pricing = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center pt-16 px-4 md:px-10 lg:px-20">
-      <div
-        className="absolute inset-0 bg-cover bg-center z-0"
-        style={{
-          backgroundImage: `url('https://img.freepik.com/premium-photo/colorful-wave-with-black-background_575980-2271.jpg')`, // Use your hero image here
-          filter: "blur(10px)", // Increase blur effect for a more dramatic look
-        }}
-      ></div>
+    <div className="flex flex-col items-center justify-center pt-16  px-4 md:px-10 lg:px-20 lg:py-20">
       <div className="text-center font-poppins">
         <h2 className="text-2xl font-bold text-sky-500">Pricing Plan</h2>
         <h1 className="text-4xl font-bold mt-2 text-orange-500">

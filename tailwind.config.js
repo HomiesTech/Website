@@ -6,6 +6,8 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         glory: ["Glory", "sans-serif"],
+        play: ["Playfair Display", "serif"],
+        arsenal: ["Arsenal SC", "sans-serif"],
       },
     },
   },

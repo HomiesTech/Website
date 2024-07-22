@@ -13,15 +13,15 @@ export default function Navbar() {
   };
 
   const linkClass =
-    "cursor-pointer text-white hover:text-blue-600 hover:bg-white  px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
+    "cursor-pointer hover:text-blue-600 hover:bg-white  px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
 
-  const activeClass = "animate-spin border-b-4 border-white ";
+  const activeClass = "animate-spin border-b-4 border-white text-sky-500";
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > 0) {
-        setNavbarBg("bg-blue-500");
+        setNavbarBg("bg-sky-500");
       } else {
         setNavbarBg("bg-transparent");
       }
@@ -59,7 +59,7 @@ export default function Navbar() {
                   to="home"
                   smooth={true}
                   duration={500}
-                  className={linkClass}
+                  className={`${linkClass} text-white`}
                   activeClass={activeClass}
                   spy={true}
                 >
@@ -69,7 +69,7 @@ export default function Navbar() {
                   to="about"
                   smooth={true}
                   duration={500}
-                  className={linkClass}
+                  className={`${linkClass} text-white`}
                   activeClass={activeClass}
                   spy={true}
                 >
@@ -79,7 +79,7 @@ export default function Navbar() {
                   to="features"
                   smooth={true}
                   duration={500}
-                  className={linkClass}
+                  className={`${linkClass} text-white`}
                   activeClass={activeClass}
                   spy={true}
                 >
@@ -89,7 +89,7 @@ export default function Navbar() {
                   to="pricing"
                   smooth={true}
                   duration={500}
-                  className={linkClass}
+                  className={`${linkClass} text-white`}
                   activeClass={activeClass}
                   spy={true}
                 >
@@ -99,7 +99,7 @@ export default function Navbar() {
                   to="career"
                   smooth={true}
                   duration={500}
-                  className={linkClass}
+                  className={`${linkClass} text-white`}
                   spy={true}
                 >
                   Career
@@ -108,7 +108,7 @@ export default function Navbar() {
                   to="faq"
                   smooth={true}
                   duration={500}
-                  className={linkClass}
+                  className={`${linkClass} text-white`}
                   activeClass={activeClass}
                   spy={true}
                 >
@@ -118,7 +118,7 @@ export default function Navbar() {
                   to="contact"
                   smooth={true}
                   duration={500}
-                  className={linkClass}
+                  className={`${linkClass} text-white`}
                   activeClass={activeClass}
                   spy={true}
                 >
@@ -131,7 +131,7 @@ export default function Navbar() {
                 to="download"
                 smooth={true}
                 duration={500}
-                className={`${linkClass} bg-yellow-500 shadow-md shadow-yellow-500 text-white heartbeat transition-transform transform hover:scale-110 duration-500 ease-in-out`}
+                className={`${linkClass} bg-white shadow-md shadow-white text-sky-500 heartbeat transition-transform transform hover:scale-110 duration-500 ease-in-out`}
                 activeClass={activeClass}
                 spy={true}
               >
