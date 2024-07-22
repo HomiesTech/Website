@@ -14,18 +14,12 @@ import ContactForm from "./pages/ContactForm";
 import DownloadSection from "./pages/DownloadSection";
 function App() {
   return (
-    <div
-      style={{
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        background: "white",
-      }}
-    >
+    <div>
       <Navbar />
       <section id="home">
         <Home />
       </section>
-      <section id="about">
+      <section id="about" className="mt-20">
         <About />
       </section>
       <section id="features" className="mt-20">
