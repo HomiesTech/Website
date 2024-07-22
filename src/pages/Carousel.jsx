@@ -27,7 +27,7 @@ const Carousel = () => {
         alt="Phone Frame"
         className="absolute w-full h-full top-0 left-0 z-10 pointer-events-none"
       />
-      <div className="absolute w-[88%] h-[100%] top-[1%] left-[5%] flex items-center justify-center overflow-hidden rounded-3xl">
+      <div className="absolute w-[88%] h-[97%] top-[1%] left-[5%] z-10 flex items-center justify-center overflow-hidden rounded-3xl">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/HomiesLogo.png";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -6,23 +6,44 @@ import "./VideoSection.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbarBg, setNavbarBg] = useState("bg-transparent");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const linkClass =
-    "cursor-pointer text-gray-900 hover:text-white hover:bg-blue-600 px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out  ";
-  const activeClass = "  animate-spin border-b-4  border-blue-600 text-black ";
+    "cursor-pointer text-white hover:text-blue-600 hover:bg-white  px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
+
+  const activeClass = "animate-spin border-b-4 border-white ";
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > 0) {
+        setNavbarBg("bg-blue-500");
+      } else {
+        setNavbarBg("bg-transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 w-full z-20 overflow-hidden transition-all duration-300 ease-in-out">
+    <nav
+      className={`fixed top-0 w-full z-20 overflow-hidden transition-all duration-300 ease-in-out ${navbarBg}`}
+    >
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 font-poppins">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleMenu}
             >
               <MenuIcon />
@@ -64,7 +85,6 @@ export default function Navbar() {
                 >
                   Features
                 </ScrollLink>
-
                 <ScrollLink
                   to="pricing"
                   smooth={true}
@@ -80,12 +100,10 @@ export default function Navbar() {
                   smooth={true}
                   duration={500}
                   className={linkClass}
-                  //activeClass={activeClass}
                   spy={true}
                 >
                   Career
                 </ScrollLink>
-
                 <ScrollLink
                   to="faq"
                   smooth={true}
@@ -113,10 +131,7 @@ export default function Navbar() {
                 to="download"
                 smooth={true}
                 duration={500}
-                className={
-                  linkClass +
-                  " bg-blue-600 shadow-md shadow-blue-600   text-white  heartbeat transition-transform transform hover:scale-110 duration-500 ease-in-out"
-                }
+                className={`${linkClass} bg-yellow-500 shadow-md shadow-yellow-500 text-white heartbeat transition-transform transform hover:scale-110 duration-500 ease-in-out`}
                 activeClass={activeClass}
                 spy={true}
               >

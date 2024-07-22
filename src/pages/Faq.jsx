@@ -4,28 +4,28 @@ const faqData = [
   {
     question: "What is the product used for?",
     answer:
-      "Our home automation device allows you to control and automate various devices in your home, transforming into a smart house. Manage lights, fans, Ac’s and other electronic home appliances. Which can be controlled by our mobile application.",
+      "Our home automation device allows you to control and automate various devices in your home, transforming it into a smart house. Manage lights, fans, ACs, and other electronic home appliances, which can be controlled by our mobile application.",
   },
   {
-    question: "From where I can download the application?",
+    question: "From where can I download the application?",
     answer:
-      "You can download our application from our website and through playstore and appstore.",
+      "You can download our application from our website and through the Play Store and App Store.",
   },
   {
     question: "How can I purchase the device?",
     answer:
-      "You can just mail us regarding your needs. Or you can call at our phone number to place an order as per your home requirements.",
+      "You can just mail us regarding your needs, or you can call our phone number to place an order as per your home requirements.",
   },
   {
     question: "How do you add devices to the app?",
     answer: [
-      "First you have to install the product at your room which you want to automate",
+      "First you have to install the product in the room you want to automate",
       <br></br>,
       "- Then download the application.",
       <br></br>,
-      "- When you open the app you have to first sign yourself up and connect it to your Wi-Fi ",
+      "- When you open the app, you have to first sign yourself up and connect it to your Wi-Fi.",
       <br></br>,
-      "- and then you have to discover the device and all the devices connected to our product will be shown on the application all together.",
+      "- Then you have to discover the device, and all the devices connected to our product will be shown on the application all together.",
     ],
   },
   {
@@ -72,8 +72,8 @@ const Faq = () => {
 
   return (
     <section>
-      <div className="container mx-auto py-5 px-5">
-        <div className="text-center mb-12">
+      <div className="container mx-auto py-1 px-5">
+        <div className="text-center mb-6">
           <div className="mx-auto align-middle justify-center pt-12 md:pt-16 px-4 md:px-0">
             <h1 className="text-3xl text-black text-center font-bold uppercase font-poppins">
               Frequently Asked Questions
@@ -81,30 +81,28 @@ const Faq = () => {
             <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>
           </div>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-2">
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-blue-600 to-blue-600  font-poppins shadow-lg rounded-lg"
+              className="bg-gradient-to-r from-white to-white font-poppins rounded-lg m-1 p-1 "
             >
               <button
-                className="w-full text-left px-6 py-4 focus:outline-none"
+                className="w-full text-left px-4 py-2 focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
-                <div className="flex justify-between items-center">
-                  <h2 className="text-lg font-medium text-blue-50">
+                <div className="flex justify-between items-center bg-gradient-to-r font-poppins from-blue-600 via-blue-600  to-blue-600 p-5 rounded-md">
+                  <h2 className="text-lg font-medium text-white ">
                     {item.question}
                   </h2>
-
                   <span className="text-white">
                     {activeIndex === index ? "-" : "+"}
                   </span>
                 </div>
               </button>
               {activeIndex === index && (
-                <div className="px-6 pb-4 ">
-                  <hr className="border-white"></hr>
-                  <p className="text-blue-600 bg-white m-2 p-2 rounded-md">
+                <div className="px-4 pb-4">
+                  <p className="text-stone-500 bg-white p-2 rounded-md">
                     {item.answer}
                   </p>
                 </div>

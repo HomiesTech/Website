@@ -13,7 +13,7 @@ import RecommendIcon from "@mui/icons-material/Recommend";
 
 export default function Features() {
   return (
-    <section className="mt-2 pt-[1.5rem] pb-[1.5rem] bg-white">
+    <section className="mt-2 pt-[1.5rem] pb-[1.5rem] bg-transparent">
       <div className="mx-auto align-middle justify-center pt-2 md:pt-16 px-4 md:px-0">
         <h1 className="text-2xl text-black text-center font-bold uppercase font-poppins">
           Features
