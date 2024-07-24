@@ -1,10 +1,12 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import Image from "next/image";
 import logo from "../assets/HomiesLogo.png";
 import MenuIcon from "@mui/icons-material/Menu";
-import "./VideoSection.css";
 
-export default function Navbar() {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [navbarBg, setNavbarBg] = useState("bg-transparent");
 
@@ -13,7 +15,7 @@ export default function Navbar() {
   };
 
   const linkClass =
-    "cursor-pointer hover:text-blue-600 hover:bg-white  px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
+    "cursor-pointer hover:text-sky-400 hover: px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
 
   const activeClass = "animate-spin border-b-4 border-white text-sky-500";
 
@@ -51,7 +53,7 @@ export default function Navbar() {
           </div>
           <div className="flex-1 flex items-center justify-between">
             <div className="flex-shrink-0">
-              <img className="h-[2rem] w-auto" src={logo} alt="HomiesTech" />
+              <Image className="h-[2rem] w-auto" src={logo} alt="HomiesTech" />
             </div>
             <div className="hidden sm:flex sm:flex-1 sm:justify-center">
               <div className="flex space-x-4">
@@ -225,4 +227,6 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;

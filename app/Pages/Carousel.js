@@ -1,4 +1,6 @@
+"use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
 import phoneFrame from "../assets/screenshot-frame.png";
 import image1 from "../assets/image1.jpeg";
@@ -22,12 +24,12 @@ const Carousel = () => {
 
   return (
     <div className="relative w-72 h-[37rem] mx-auto">
-      <img
+      <Image
         src={phoneFrame}
         alt="Phone Frame"
         className="absolute w-full h-full top-0 left-0 z-10 pointer-events-none"
       />
-      <div className="absolute w-[88%] h-[97%] top-[1%] left-[5%] z-10 flex items-center justify-center overflow-hidden rounded-3xl">
+      <div className="absolute w-[88%] h-[97%] top-[1%] left-[6%] z-0 flex items-center justify-center overflow-hidden rounded-3xl">
         <div
           className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -37,7 +39,7 @@ const Carousel = () => {
               key={index}
               className="w-full h-full flex-shrink-0 flex items-center justify-center"
             >
-              <img
+              <Image
                 src={src}
                 alt={`Slide ${index}`}
                 className="w-full h-full object-cover rounded-3xl"
@@ -46,7 +48,7 @@ const Carousel = () => {
           ))}
         </div>
       </div>
-      <div className="absolute flex justify-center w-full bottom-4 z-10">
+      <div className="absolute flex justify-center w-full bottom-4 z-20">
         {images.map((_, index) => (
           <div
             key={index}
