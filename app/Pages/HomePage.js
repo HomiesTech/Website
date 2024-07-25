@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <section className="flex flex-col md:flex-row h-screen md:h-[50rem] lg:h-screen relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center z-0"
+        className="absolute inset-0 bg-cover bg-center -z-50"
         style={{
-          backgroundImage: `url('${HeroImage}')`,
+          backgroundImage: `url('https://wallpapercave.com/wp/wp7113919.jpg')`,
           filter: "blur(10px)",
           backgroundAttachment: "fixed",
         }}
@@ -16,7 +16,7 @@ const Home = () => {
 
       <div className="w-full md:w-2/3 bg-transparent p-6 md:p-20 flex items-center justify-center z-10">
         <div className="detail-box text-center md:text-left text-white lg:ml-[12rem]">
-          <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold mt-10 md:mt-0 uppercase">
+          <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold mt-10 md:mt-0 uppercase">
             <span className="animate-spin text-white">Welcome </span>
             To Homenetics!
           </h2>
