@@ -51,7 +51,7 @@ const Pricing = () => {
   ];
 
   const [customUnits, setCustomUnits] = useState("");
-  const customPricePerUnit = 2000; // Example price per unit
+  const customPricePerUnit = 2000;
 
   const handleCustomUnitsChange = (event) => {
     setCustomUnits(event.target.value);
@@ -66,16 +66,18 @@ const Pricing = () => {
     <div className="flex flex-col items-center justify-center pt-16 px-4 md:px-10 lg:px-20 lg:py-20">
       <div className="text-center font-poppins">
         <h2 className="text-2xl font-bold text-sky-500">Pricing Plan</h2>
-        <h1 className="text-4xl font-bold mt-2 text-orange-500">
+        <h1 className="text-4xl font-bold mt-2 text-sky-500">
           Choose Your Plan
         </h1>
       </div>
       <div className="flex flex-wrap justify-center mt-10 font-poppins">
         {plans.map((plan, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
-            <div className="bg-blue-50 border-2 shadow-sky-500 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-500 ease-in-out border-sky-500 w-[15rem] h-[25rem] flex flex-col justify-between">
-              <div>
-                <h3 className="text-xl font-bold text-sky-500">{plan.title}</h3>
+          <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
+            <div className="bg-blue-50 border-2 shadow-sky-500 p-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-500 ease-in-out border-sky-500 flex flex-col justify-between">
+              <div className="flex flex-col h-full">
+                <h3 className="text-xl font-bold text-sky-500 mb-4">
+                  {plan.title}
+                </h3>
                 {plan.title === "Custom" ? (
                   <>
                     <input
@@ -83,23 +85,21 @@ const Pricing = () => {
                       value={customUnits}
                       onChange={handleCustomUnitsChange}
                       placeholder="Enter number of units"
-                      className="w-full mt-4 p-2 border-2 rounded-lg"
+                      className="w-full mb-4 p-2 border-2 rounded-lg"
                       min="0"
                     />
                     {customUnits > 0 && (
                       <h2 className="text-3xl font-bold my-4 text-orange-500">
                         ₹{calculateCustomPrice()}
-                        <span className="text-xl font-normal"></span>
                       </h2>
                     )}
                   </>
                 ) : (
                   <h2 className="text-3xl font-bold my-6 text-orange-500">
                     ₹{plan.price}
-                    <span className="text-xl font-normal"></span>
                   </h2>
                 )}
-                <ul className="text-gray-600">
+                <ul className="text-gray-600 mt-auto">
                   {plan.features.map((feature, i) => (
                     <li
                       key={i}

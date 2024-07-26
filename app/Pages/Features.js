@@ -11,8 +11,6 @@ import Person2Icon from "@mui/icons-material/Person2";
 import WifiIcon from "@mui/icons-material/Wifi";
 import Diversity1Icon from "@mui/icons-material/Diversity1";
 import RecommendIcon from "@mui/icons-material/Recommend";
-// Import Carousel component if needed
-// import Carousel from "./Carousel";
 
 const Features = () => {
   const featuresData = [

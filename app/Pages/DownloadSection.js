@@ -10,9 +10,9 @@ export default function DownloadSection() {
   return (
     <div className="container mx-auto py-16 mt-18 px-4 md:px-8 lg:px-20">
       <div className="flex flex-wrap lg:flex-nowrap items-center gap-5 mt-20">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 ">
           <div className="relative flex justify-center items-center ">
-            <div className="relative z-1 transform -rotate-45">
+            <div className="relative z-1 transform lg:-rotate-45 -rotate-12">
               <Image
                 src={image1}
                 alt="Image 1"
@@ -30,7 +30,7 @@ export default function DownloadSection() {
                 className="rounded-lg shadow-lg"
               />
             </div>
-            <div className="relative z-1 transform rotate-45">
+            <div className="relative z-1 transform lg:rotate-45 rotate-12">
               <Image
                 src={image3}
                 alt="Image 3"

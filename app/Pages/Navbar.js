@@ -18,6 +18,9 @@ const Navbar = () => {
     "cursor-pointer hover:text-sky-400 hover: px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
 
   const activeClass = "animate-spin border-b-4 border-white text-sky-500";
+  const mobileActive = "border-b-4 border-white text-sky-500 bg-white";
+  const mobileLink =
+    "cursor-pointer hover:text-sky-400 hover: px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +51,7 @@ const Navbar = () => {
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleMenu}
             >
-              <MenuIcon />
+              <MenuIcon className="text-transparent bg-transparent" />
             </button>
           </div>
           <div className="flex-1 flex items-center justify-between">
@@ -150,8 +153,8 @@ const Navbar = () => {
             to="home"
             smooth={true}
             duration={500}
-            className={`${linkClass} text-blue-700 hover:bg-blue-700 block`}
-            activeClass={activeClass}
+            className={`${mobileLink}`}
+            activeClass={mobileActive}
             spy={true}
             onClick={toggleMenu}
           >
@@ -161,8 +164,8 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            className={`${linkClass} block`}
-            activeClass={activeClass}
+            className={`${mobileLink} block`}
+            activeClass={mobileActive}
             spy={true}
             onClick={toggleMenu}
           >
@@ -172,8 +175,8 @@ const Navbar = () => {
             to="features"
             smooth={true}
             duration={500}
-            className={`${linkClass} block`}
-            activeClass={activeClass}
+            className={`${mobileLink} block`}
+            activeClass={mobileActive}
             spy={true}
             onClick={toggleMenu}
           >
@@ -183,8 +186,8 @@ const Navbar = () => {
             to="pricing"
             smooth={true}
             duration={500}
-            className={`${linkClass} block`}
-            activeClass={activeClass}
+            className={`${mobileLink} block`}
+            activeClass={mobileActive}
             spy={true}
             onClick={toggleMenu}
           >
@@ -194,8 +197,8 @@ const Navbar = () => {
             to="faq"
             smooth={true}
             duration={500}
-            className={`${linkClass} block`}
-            activeClass={activeClass}
+            className={`${mobileLink} block`}
+            activeClass={mobileActive}
             spy={true}
             onClick={toggleMenu}
           >
@@ -205,8 +208,8 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className={`${linkClass} block`}
-            activeClass={activeClass}
+            className={`${mobileLink} block`}
+            activeClass={mobileActive}
             spy={true}
             onClick={toggleMenu}
           >
@@ -216,8 +219,8 @@ const Navbar = () => {
             to="download"
             smooth={true}
             duration={500}
-            className={`${linkClass} block`}
-            activeClass={activeClass}
+            className={`${mobileLink} block`}
+            activeClass={mobileActive}
             spy={true}
             onClick={toggleMenu}
           >
