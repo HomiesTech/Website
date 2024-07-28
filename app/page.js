@@ -41,7 +41,7 @@ export default function Home() {
         <ContactForm />
       </section>
 
-      <section id="Footer" className="mt-20">
+      <section id="Footer">
         <Footer />
       </section>
     </main>

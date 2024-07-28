@@ -4,7 +4,7 @@ import HeroImage from "../assets/bg-img.png";
 
 const Home = () => {
   return (
-    <section className="flex flex-col md:flex-row h-screen md:h-[50rem] lg:h-screen relative overflow-hidden">
+    <section className="flex flex-col md:flex-row h-screen md:h-[50rem] lg:h-screen relative overflow-hidden ">
       <div
         className="absolute inset-0 bg-cover bg-center -z-50"
         style={{
