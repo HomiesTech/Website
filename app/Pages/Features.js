@@ -74,13 +74,13 @@ const Features = () => {
   ];
 
   return (
-    <section className="mt-2 pt-[1.5rem] pb-[1.5rem] bg-transparent">
+    <section className="mt-2 pt-[1.5rem] pb-[1.5rem] bg-transparent ">
       <div className="mx-auto align-middle justify-center pt-2 md:pt-16 px-4 md:px-0">
         <h1 className="text-2xl text-black text-center font-bold uppercase font-poppins">
           Features
         </h1>
-        <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6" />
-        <h1 className="text-3xl text-blue-600 text-center font-bold uppercase font-poppins">
+        <hr className="border-sky-600 border-2 w-32 mx-auto mt-2 mb-6" />
+        <h1 className="text-3xl text-sky-500 text-center font-bold uppercase font-poppins">
           Awesome Features
         </h1>
       </div>
@@ -88,9 +88,9 @@ const Features = () => {
         {featuresData.map(({ Icon, title, description }, index) => (
           <div
             key={index}
-            className="rounded-md bg-blue-50 flex flex-col items-center p-4 transition-transform transform hover:scale-110 duration-500 ease-in-out"
+            className="rounded-md bg-blue-50 flex flex-col items-center p-4 transition-transform transform hover:scale-110 duration-500 ease-in-out hover:border-b-2 hover:border-sky-400 hover:shadow-md hover:shadow-sky-400"
           >
-            <div className="bg-gradient-to-r from-blue-400 to-blue-700 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
+            <div className="bg-gradient-to-r from-sky-300 to-sky-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
               <Icon />
             </div>
             <h1 className="text-xl font-bold text-center">{title}</h1>

@@ -130,7 +130,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="text-center text-black text-sm mt-8">
+        <div className="text-center text-white text-sm mt-8">
           &copy; 2024 Homenetics. All rights reserved.
         </div>
       </div>
