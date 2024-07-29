@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import AccessibilityIcon from "@mui/icons-material/Accessibility";
@@ -16,13 +17,31 @@ const About = () => {
   return (
     <section className="m-0 p-0">
       <div className="max-w-6xl mx-auto pt-20 mt-16 md:mt-20 md:pt-28 px-4 md:px-8">
-        <h1 className="text-3xl text-sky-500 text-center font-bold uppercase font-poppins">
+        <motion.h1
+          className="text-3xl text-sky-500 text-center font-bold uppercase font-poppins"
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           {aboutContent.header}
-        </h1>
-        <hr className="border-sky-600 border-2 w-32 mx-auto mt-2 mb-6" />
-        <div className="text-center text-lg mx-auto text-gray-500 font-poppins">
+        </motion.h1>
+        <motion.hr
+          className="border-sky-600 border-2 w-32 mx-auto mt-2 mb-6"
+          initial={{ width: 0 }}
+          whileInView={{ width: "32px" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        />
+        <motion.div
+          className="text-center text-lg mx-auto text-gray-500 font-poppins"
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
           <p>{aboutContent.description}</p>
-        </div>
+        </motion.div>
       </div>
 
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-center pt-12 md:pt-16 px-4 md:px-1 font-poppins">
@@ -34,12 +53,24 @@ const About = () => {
             <div className="flex text-white items-center p-4 m-4 justify-center rounded-full bg-gradient-to-r from-sky-300 to-sky-600 h-32 w-32">
               {icons[section.icon]}
             </div>
-            <h3 className="text-sky-400 text-center font-bold text-xl p-2 mt-4">
+            <motion.h3
+              className="text-sky-400 text-center font-bold text-xl p-2 mt-4"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
               {section.title}
-            </h3>
-            <p className="text-center text-gray-500 p-2 m-2">
+            </motion.h3>
+            <motion.p
+              className="text-center text-gray-500 p-2 m-2"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
               {section.description}
-            </p>
+            </motion.p>
           </div>
         ))}
       </div>

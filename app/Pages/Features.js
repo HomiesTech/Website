@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import "tw-elements";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import DoneIcon from "@mui/icons-material/Done";
@@ -76,90 +77,121 @@ const Features = () => {
   return (
     <section className="mt-2 pt-[1.5rem] pb-[1.5rem] bg-transparent ">
       <div className="mx-auto align-middle justify-center pt-2 md:pt-16 px-4 md:px-0">
-        <h1 className="text-2xl text-black text-center font-bold uppercase font-poppins">
+        <motion.h1
+          className="text-2xl text-black text-center font-bold uppercase font-poppins"
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
           Features
-        </h1>
-        <hr className="border-sky-600 border-2 w-32 mx-auto mt-2 mb-6" />
-        <h1 className="text-3xl text-sky-500 text-center font-bold uppercase font-poppins">
+        </motion.h1>
+        <motion.hr
+          className="border-sky-600 border-2 w-32 mx-auto mt-2 mb-6"
+          initial={{ width: 0 }}
+          whileInView={{ width: "32px" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        />
+        <motion.h1
+          className="text-3xl text-sky-500 text-center font-bold uppercase font-poppins"
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
           Awesome Features
-        </h1>
+        </motion.h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-4 md:p-10">
         {featuresData.map(({ Icon, title, description }, index) => (
-          <div
+          <motion.div
             key={index}
-            className="rounded-md bg-blue-50 flex flex-col items-center p-4 transition-transform transform hover:scale-110 duration-500 ease-in-out hover:border-b-2 hover:border-sky-400 hover:shadow-md hover:shadow-sky-400"
+            className="rounded-md bg-blue-50 flex flex-col items-center p-4  hover:border-b-2 hover:border-sky-400 hover:shadow-md hover:shadow-sky-400"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 * index }}
+            whileHover={{ scale: 1.05, rotate: 2 }}
           >
             <div className="bg-gradient-to-r from-sky-300 to-sky-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
               <Icon />
             </div>
-            <h1 className="text-xl font-bold text-center">{title}</h1>
-            <p className="m-2 p-2 text-gray-500 text-justify">{description}</p>
-          </div>
+            <motion.h1
+              className="text-xl font-bold text-center"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              {title}
+            </motion.h1>
+            <motion.p
+              className="m-2 p-2 text-gray-500 text-justify"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              {description}
+            </motion.p>
+          </motion.div>
         ))}
       </div>
-      {/* Uncomment if the ScreenShot section is needed */}
-      {/* <div className="flex flex-col lg:flex-row items-center justify-center m-10 p-10 space-y-8 lg:space-y-0 lg:space-x-8">
-        <div className="w-full lg:w-2/3">
-          <p className="text-blue-600 font-bold text-2xl m-2 font-poppins">
-            ScreenShot
-          </p>
-          <h1 className="text-2xl lg:text-4xl text-black font-bold m-2 font-poppins">
-            User Friendly Interface And Very Easy To Use Fitness App
-          </h1>
-          <p className="text-gray-500 m-2 p-4 font-poppins text-justify">
-            The application is easy to use can be understand by anyone in the
-            house. In the interface you can change the background of the
-            specific room and you can select themes from the given option.
-            Everything is easily accessible and pre-defined in the application
-            and the product.
-          </p>
-          <p className="text-gray-500 m-2 p-2 font-poppins">
-            <DoneIcon className="text-blue-600" /> Diam dolor diam ipsum et
-            tempor sit
-          </p>
-          <p className="text-gray-500 m-2 p-2 font-poppins">
-            <DoneIcon className="text-blue-600" /> Aliqu diam amet diam et eos
-            labore
-          </p>
-          <p className="text-gray-500 m-2 p-2 font-poppins">
-            <DoneIcon className="text-blue-600" /> Clita erat ipsum et lorem et
-            sit
-          </p>
-          <div className="pt-12 md:pt-16 p-6">
-            <button className="px-8 py-4 bg-gradient-to-r font-poppins text-xl font-bold from-blue-400 to-blue-700 text-white text-center rounded-md">
-              Read More
-            </button>
-          </div>
-        </div>
-        <div className="w-full lg:w-1/3 relative">
-          <Carousel />
-        </div>
-      </div> */}
       <div className="flex flex-col items-center justify-center p-10 m-10">
         <div>
-          <p className="text-xl text-sky-500 font-flory font-bold text-center">
+          <motion.p
+            className="text-xl text-sky-500 font-flory font-bold text-center"
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             How It Works
-          </p>
-          <h1 className="text-2xl lg:text-4xl font-bold text-center font-poppins">
+          </motion.p>
+          <motion.h1
+            className="text-2xl lg:text-4xl font-bold text-center font-poppins"
+            initial={{ y: -20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             3 Easy Steps
-          </h1>
+          </motion.h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-2 p-2 mt-8 pt-8">
           {stepsData.map(({ Icon, title, description }, index) => (
-            <div
+            <motion.div
               key={index}
               className="relative bg-blue-50 p-6 rounded-md flex flex-col items-center"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 * index }}
+              whileHover={{ scale: 1.05, rotate: 2 }}
             >
               <div className="bg-gradient-to-r from-sky-400 to-sky-600 rounded-full w-20 h-20 flex items-center justify-center">
                 <Icon className="text-white text-4xl" />
               </div>
-              <h1 className="text-xl font-bold text-center mt-10">{title}</h1>
-              {/* Uncomment if descriptions are needed */}
-              {/* <p className="text-gray-500 text-justify p-2 m-2 ">
+              <motion.h1
+                className="text-xl font-bold text-center mt-10"
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                {title}
+              </motion.h1>
+              {/* <motion.p
+                className="text-gray-500 text-justify p-2 m-2"
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
                 {description}
-              </p> */}
-            </div>
+              </motion.p> */}
+            </motion.div>
           ))}
         </div>
       </div>
