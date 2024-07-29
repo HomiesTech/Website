@@ -20,11 +20,11 @@ const VideoSection = () => {
         <h1 className="text-2xl text-black text-center font-bold uppercase font-poppins">
           Demo Video
         </h1>
-        <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>
+        <hr className="border-sky-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>
       </div>
       <div
         className={`h-[25rem] w-full flex items-center justify-center ${
-          isVideoVisible ? "bg-transparent" : "bg-blue-700 bg-opacity-35"
+          isVideoVisible ? "bg-transparent" : "bg-sky-700 bg-opacity-35"
         }`}
         onMouseEnter={handleHoverEnter}
         onMouseLeave={handleHoverLeave}
@@ -39,11 +39,11 @@ const VideoSection = () => {
           ></iframe>
         ) : (
           <div className="flex flex-col items-center justify-center">
-            <p className="text-4xl font-bold text-blue-600 mb-4 uppercase font-poppins">
+            <p className="text-4xl font-bold text-sky-600 mb-4 uppercase font-poppins">
               Click to Watch
             </p>
             <button
-              className="bg-blue-600 text-white py-3 px-3 rounded flex items-center justify-center"
+              className="bg-sky-600 text-white py-3 px-3 rounded flex items-center justify-center"
               onClick={() => setIsVideoVisible(true)}
             >
               <PlayCircleIcon style={{ fontSize: 50 }} />

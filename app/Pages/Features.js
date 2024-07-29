@@ -138,7 +138,7 @@ const Features = () => {
       </div> */}
       <div className="flex flex-col items-center justify-center p-10 m-10">
         <div>
-          <p className="text-xl text-blue-600 font-flory font-bold text-center">
+          <p className="text-xl text-sky-500 font-flory font-bold text-center">
             How It Works
           </p>
           <h1 className="text-2xl lg:text-4xl font-bold text-center font-poppins">
@@ -151,7 +151,7 @@ const Features = () => {
               key={index}
               className="relative bg-blue-50 p-6 rounded-md flex flex-col items-center"
             >
-              <div className="bg-gradient-to-r from-blue-400 to-blue-700 rounded-full w-20 h-20 flex items-center justify-center">
+              <div className="bg-gradient-to-r from-sky-400 to-sky-600 rounded-full w-20 h-20 flex items-center justify-center">
                 <Icon className="text-white text-4xl" />
               </div>
               <h1 className="text-xl font-bold text-center mt-10">{title}</h1>

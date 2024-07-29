@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="container mx-auto py-16 px-4 md:px-8">
         <div className="flex flex-row align-middle justify-center">
           <a
-            href="https://www.instagram.com/homiesTech"
+            href="https://www.instagram.com/homenetics_official/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
@@ -32,21 +32,21 @@ const Footer = () => {
             <GitHubIcon />
           </a>
           <a
-            href="https://www.linkedin.com/in/homiesTech/"
+            href="https://www.linkedin.com/company/homenetics-technology-pvt-ltd/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
           >
             <LinkedInIcon />
           </a>
-          <a
+          {/*  <a
             href="https://twitter.com/homiesTech"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
           >
             <TwitterIcon />
-          </a>
+          </a> */}
           <a
             href="mailto:Homenetics_Official@homenetics.in"
             target="_blank"

@@ -42,7 +42,7 @@ export default function DownloadSection() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-          <h5 className="text-2xl text-blue-500 font-bold font-poppins">
+          <h5 className="text-2xl text-sky-500 font-bold font-poppins">
             Download
           </h5>
           <h1 className="mb-4 text-2xl md:text-4xl font-bold font-poppins">
@@ -52,7 +52,7 @@ export default function DownloadSection() {
             <div className="mt-4 md:mt-8 p-2">
               <a
                 href="#"
-                className="flex items-center bg-gradient-to-r from-blue-400 to-blue-700 text-white font-semibold py-3 px-4 rounded-xl shadow-lg hover:from-blue-300 hover:to-blue-500 transition duration-300"
+                className="flex items-center bg-gradient-to-r from-sky-400 to-sky-600 text-white font-semibold py-3 px-4 rounded-xl shadow-lg shadow-white transition duration-300"
               >
                 <AppleIcon className="mr-2" />
                 <span>Available on App Store</span>
@@ -61,7 +61,7 @@ export default function DownloadSection() {
             <div className="mt-4 md:mt-8 p-2">
               <a
                 href="#"
-                className="flex items-center bg-gradient-to-r from-blue-400 to-blue-700 text-white font-semibold py-3 px-4 rounded-xl shadow-lg transition duration-300"
+                className="flex items-center bg-gradient-to-r from-sky-400 to-sky-600 text-white font-semibold py-3 px-4 rounded-xl shadow-lg transition duration-300"
               >
                 <AdbIcon className="mr-2" />
                 <span>Available on Play Store</span>
