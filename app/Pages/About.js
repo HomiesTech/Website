@@ -18,7 +18,7 @@ const About = () => {
     <section className="m-0 p-0">
       <div className="max-w-6xl mx-auto pt-20 mt-16 md:mt-20 md:pt-28 px-4 md:px-8">
         <motion.h1
-          className="text-3xl text-sky-500 text-center font-bold uppercase font-poppins"
+          className="text-2xl text-sky-500 text-center font-bold uppercase font-poppins"
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -29,12 +29,12 @@ const About = () => {
         <motion.hr
           className="border-sky-600 border-2 w-32 mx-auto mt-2 mb-6"
           initial={{ width: 0 }}
-          whileInView={{ width: "32px" }}
+          whileInView={{ width: "200px" }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         />
         <motion.div
-          className="text-center text-lg mx-auto text-gray-500 font-poppins"
+          className="text-center text-md mx-auto text-gray-500 font-poppins"
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -48,13 +48,13 @@ const About = () => {
         {aboutContent.sections.map((section, index) => (
           <div
             key={index}
-            className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-white border-b-2 shadow-md shadow-sky-400 border-sky-400 p-4 rounded-md md:m-4 transition-transform transform hover:scale-110 duration-500 ease-in-out"
+            className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-white  border-b-2  shadow-md shadow-blue-700 border-blue-700 p-4 rounded-md md:m-4 transition-transform transform hover:scale-110 duration-500 ease-in-out"
           >
             <div className="flex text-white items-center p-4 m-4 justify-center rounded-full bg-gradient-to-r from-sky-300 to-sky-600 h-32 w-32">
               {icons[section.icon]}
             </div>
             <motion.h3
-              className="text-sky-400 text-center font-bold text-xl p-2 mt-4"
+              className="text-blue-700 text-center font-bold text-lg p-2 mt-4"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
@@ -63,7 +63,7 @@ const About = () => {
               {section.title}
             </motion.h3>
             <motion.p
-              className="text-center text-gray-500 p-2 m-2"
+              className="text-center text-gray-500 p-2 m-2 text-sm"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}

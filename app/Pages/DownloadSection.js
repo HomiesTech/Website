@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import AppleIcon from "@mui/icons-material/Apple";
@@ -8,10 +9,10 @@ import image3 from "../assets/image3.jpeg";
 
 export default function DownloadSection() {
   return (
-    <div className="container mx-auto py-16 mt-18 px-4 md:px-8 lg:px-20">
+    <div className="container mx-auto py-16 mt-18 px-4 md:px-8 lg:px-20 ">
       <div className="flex flex-wrap lg:flex-nowrap items-center gap-5 mt-20">
-        <div className="w-full lg:w-1/2 ">
-          <div className="relative flex justify-center items-center ">
+        <div className="w-full lg:w-1/2">
+          <div className="relative flex justify-center items-center">
             <div className="relative z-1 transform lg:-rotate-45 -rotate-12">
               <Image
                 src={image1}

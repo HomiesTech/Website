@@ -1244,32 +1244,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Timeout: () => (/* binding */ Timeout),\n/* harmony export */   \"default\": () => (/* binding */ useTimeout)\n/* harmony export */ });\n/* harmony import */ var _useLazyRef_useLazyRef__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../useLazyRef/useLazyRef */ \"(ssr)/./node_modules/@mui/utils/esm/useLazyRef/useLazyRef.js\");\n/* harmony import */ var _useOnMount_useOnMount__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../useOnMount/useOnMount */ \"(ssr)/./node_modules/@mui/utils/esm/useOnMount/useOnMount.js\");\n/* __next_internal_client_entry_do_not_use__ Timeout,default auto */ \n\nclass Timeout {\n    constructor(){\n        this.currentId = null;\n        this.clear = ()=>{\n            if (this.currentId !== null) {\n                clearTimeout(this.currentId);\n                this.currentId = null;\n            }\n        };\n        this.disposeEffect = ()=>{\n            return this.clear;\n        };\n    }\n    static create() {\n        return new Timeout();\n    }\n    /**\n   * Executes `fn` after `delay`, clearing any previously scheduled call.\n   */ start(delay, fn) {\n        this.clear();\n        this.currentId = setTimeout(()=>{\n            this.currentId = null;\n            fn();\n        }, delay);\n    }\n}\nfunction useTimeout() {\n    const timeout = (0,_useLazyRef_useLazyRef__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(Timeout.create).current;\n    (0,_useOnMount_useOnMount__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(timeout.disposeEffect);\n    return timeout;\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvQG11aS91dGlscy9lc20vdXNlVGltZW91dC91c2VUaW1lb3V0LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7cUVBRWtEO0FBQ0E7QUFDM0MsTUFBTUU7SUFDWEMsYUFBYztRQUNaLElBQUksQ0FBQ0MsU0FBUyxHQUFHO1FBQ2pCLElBQUksQ0FBQ0MsS0FBSyxHQUFHO1lBQ1gsSUFBSSxJQUFJLENBQUNELFNBQVMsS0FBSyxNQUFNO2dCQUMzQkUsYUFBYSxJQUFJLENBQUNGLFNBQVM7Z0JBQzNCLElBQUksQ0FBQ0EsU0FBUyxHQUFHO1lBQ25CO1FBQ0Y7UUFDQSxJQUFJLENBQUNHLGFBQWEsR0FBRztZQUNuQixPQUFPLElBQUksQ0FBQ0YsS0FBSztRQUNuQjtJQUNGO0lBQ0EsT0FBT0csU0FBUztRQUNkLE9BQU8sSUFBSU47SUFDYjtJQUNBOztHQUVDLEdBQ0RPLE1BQU1DLEtBQUssRUFBRUMsRUFBRSxFQUFFO1FBQ2YsSUFBSSxDQUFDTixLQUFLO1FBQ1YsSUFBSSxDQUFDRCxTQUFTLEdBQUdRLFdBQVc7WUFDMUIsSUFBSSxDQUFDUixTQUFTLEdBQUc7WUFDakJPO1FBQ0YsR0FBR0Q7SUFDTDtBQUNGO0FBQ2UsU0FBU0c7SUFDdEIsTUFBTUMsVUFBVWQsa0VBQVVBLENBQUNFLFFBQVFNLE1BQU0sRUFBRU8sT0FBTztJQUNsRGQsa0VBQVVBLENBQUNhLFFBQVFQLGFBQWE7SUFDaEMsT0FBT087QUFDVCIsInNvdXJjZXMiOlsid2VicGFjazovL2hvbWllcy13ZWJzaXRlLy4vbm9kZV9tb2R1bGVzL0BtdWkvdXRpbHMvZXNtL3VzZVRpbWVvdXQvdXNlVGltZW91dC5qcz84YjM4Il0sInNvdXJjZXNDb250ZW50IjpbIid1c2UgY2xpZW50JztcblxuaW1wb3J0IHVzZUxhenlSZWYgZnJvbSAnLi4vdXNlTGF6eVJlZi91c2VMYXp5UmVmJztcbmltcG9ydCB1c2VPbk1vdW50IGZyb20gJy4uL3VzZU9uTW91bnQvdXNlT25Nb3VudCc7XG5leHBvcnQgY2xhc3MgVGltZW91dCB7XG4gIGNvbnN0cnVjdG9yKCkge1xuICAgIHRoaXMuY3VycmVudElkID0gbnVsbDtcbiAgICB0aGlzLmNsZWFyID0gKCkgPT4ge1xuICAgICAgaWYgKHRoaXMuY3VycmVudElkICE9PSBudWxsKSB7XG4gICAgICAgIGNsZWFyVGltZW91dCh0aGlzLmN1cnJlbnRJZCk7XG4gICAgICAgIHRoaXMuY3VycmVudElkID0gbnVsbDtcbiAgICAgIH1cbiAgICB9O1xuICAgIHRoaXMuZGlzcG9zZUVmZmVjdCA9ICgpID0+IHtcbiAgICAgIHJldHVybiB0aGlzLmNsZWFyO1xuICAgIH07XG4gIH1cbiAgc3RhdGljIGNyZWF0ZSgpIHtcbiAgICByZXR1cm4gbmV3IFRpbWVvdXQoKTtcbiAgfVxuICAvKipcbiAgICogRXhlY3V0ZXMgYGZuYCBhZnRlciBgZGVsYXlgLCBjbGVhcmluZyBhbnkgcHJldmlvdXNseSBzY2hlZHVsZWQgY2FsbC5cbiAgICovXG4gIHN0YXJ0KGRlbGF5LCBmbikge1xuICAgIHRoaXMuY2xlYXIoKTtcbiAgICB0aGlzLmN1cnJlbnRJZCA9IHNldFRpbWVvdXQoKCkgPT4ge1xuICAgICAgdGhpcy5jdXJyZW50SWQgPSBudWxsO1xuICAgICAgZm4oKTtcbiAgICB9LCBkZWxheSk7XG4gIH1cbn1cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIHVzZVRpbWVvdXQoKSB7XG4gIGNvbnN0IHRpbWVvdXQgPSB1c2VMYXp5UmVmKFRpbWVvdXQuY3JlYXRlKS5jdXJyZW50O1xuICB1c2VPbk1vdW50KHRpbWVvdXQuZGlzcG9zZUVmZmVjdCk7XG4gIHJldHVybiB0aW1lb3V0O1xufSJdLCJuYW1lcyI6WyJ1c2VMYXp5UmVmIiwidXNlT25Nb3VudCIsIlRpbWVvdXQiLCJjb25zdHJ1Y3RvciIsImN1cnJlbnRJZCIsImNsZWFyIiwiY2xlYXJUaW1lb3V0IiwiZGlzcG9zZUVmZmVjdCIsImNyZWF0ZSIsInN0YXJ0IiwiZGVsYXkiLCJmbiIsInNldFRpbWVvdXQiLCJ1c2VUaW1lb3V0IiwidGltZW91dCIsImN1cnJlbnQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/@mui/utils/esm/useTimeout/useTimeout.js\n");
 
-/***/ }),
-
-/***/ "(rsc)/./node_modules/@mui/icons-material/Adb.js":
-/*!*************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Adb.js ***!
-  \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-/* __next_internal_client_entry_do_not_use__  cjs */ 
-const { createProxy } = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-module.exports = createProxy("/Users/prajaktakapoor/Documents/GitHub/Website/node_modules/@mui/icons-material/Adb.js");
-
-
-/***/ }),
-
-/***/ "(rsc)/./node_modules/@mui/icons-material/Apple.js":
-/*!***************************************************!*\
-  !*** ./node_modules/@mui/icons-material/Apple.js ***!
-  \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-/* __next_internal_client_entry_do_not_use__  cjs */ 
-const { createProxy } = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
-module.exports = createProxy("/Users/prajaktakapoor/Documents/GitHub/Website/node_modules/@mui/icons-material/Apple.js");
-
-
 /***/ })
 
 };

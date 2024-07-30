@@ -1,72 +1,83 @@
 "use client";
-
 import React from "react";
-import HomeIcon from "@mui/icons-material/Home";
+import { motion } from "framer-motion";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter"; // Changed to TwitterIcon instead of XIcon
-import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="text-white w-full bg-sky-500 mt-[5rem] ">
+    <motion.footer
+      className="text-white w-full bg-sky-500 mt-[5rem]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="container mx-auto py-16 px-4 md:px-8">
-        <div className="flex flex-row align-middle justify-center">
-          <a
+        <motion.div
+          className="flex flex-row align-middle justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          {/* Social Media Icons */}
+          {/* Add other icons here */}
+          <motion.a
             href="https://www.instagram.com/homenetics_official/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
+            whileHover={{ scale: 1.1 }}
           >
             <InstagramIcon />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://github.com/homiesTech"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
+            whileHover={{ scale: 1.1 }}
           >
             <GitHubIcon />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/company/homenetics-technology-pvt-ltd/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
+            whileHover={{ scale: 1.1 }}
           >
             <LinkedInIcon />
-          </a>
-          {/*  <a
-            href="https://twitter.com/homiesTech"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white p-3 hover:shadow-pink-200 transition duration-300"
-          >
-            <TwitterIcon />
-          </a> */}
-          <a
+          </motion.a>
+          <motion.a
             href="mailto:Homenetics_Official@homenetics.in"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
+            whileHover={{ scale: 1.1 }}
           >
             <EmailIcon />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="tel:+9518499946"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
+            whileHover={{ scale: 1.1 }}
           >
             <PhoneIcon />
-          </a>
-        </div>
-        <div className="text-center text-white text-sm mt-4">
+          </motion.a>
+        </motion.div>
+        <motion.div
+          className="text-center text-white text-sm mt-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.5 }}
+        >
           &copy; 2024 Homenetics. All rights reserved.
-        </div>
+        </motion.div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
