@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import DoneIcon from "@mui/icons-material/Done";
+import img from "../assets/pricing.jpg"; // Adjust import as needed
 
 const PricingPlan = () => {
   const [customUnits, setCustomUnits] = useState("");
@@ -57,16 +58,9 @@ const PricingPlan = () => {
       title: "Custom",
       price: "",
       units: "",
-      features: [
-        "It includes",
-        "Whatever you want",
-        "to optimize in your home",
-      ],
+      features: ["It includes"],
     },
   ];
-
-  const backgroundImageUrl =
-    "https://png.pngtree.com/png-clipart/20221128/ourmid/pngtree-white-waves-paper-cut-png-image_6483346.png";
 
   return (
     <motion.div
@@ -86,25 +80,20 @@ const PricingPlan = () => {
         Pricing Plan
       </motion.h2>
       <motion.hr
-        className="border-sky-600 border-2 w-80 mx-auto mt-2 mb-6"
+        className="border-sky-600 border-2 w-80 mx-auto mt-2 mb-12"
         initial={{ width: 0 }}
         whileInView={{ width: "200px" }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
       />
-      <div className="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 m-2 p-2">
+      <div className="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 m-2 p-2 gap-0 ">
         {plans.map((plan, index) => (
           <motion.div
             key={plan.title}
-            style={{
-              backgroundImage: `url(${backgroundImageUrl})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            className={`bg-white bg-opacity-75 rounded-lg shadow-lg p-8 w-full sm:w-80 md:w-80 lg:w-80 xl:w-80 transition-transform transform hover:scale-110 duration-500 ease-in-out ${
+            className={`bg-white bg-opacity-75 rounded-lg shadow-lg w-full sm:w-80 md:w-80 lg:w-80 xl:w-80 transition-transform transform hover:scale-110 duration-500 ease-in-out flex flex-col ${
               plan.title === "Custom"
-                ? " border-l-2 border-r-2 border-sky-700 bg-gradient-to-t from-sky-300 via-white to-sky-100 shadow-lg text-black"
-                : " border-l-2 border-r-2 border-sky-700 shadow-xl bg-gradient-to-t from-sky-300 via-white to-sky-100"
+                ? "  border-sky-700 shadow-2xl text-black"
+                : "  border-sky-700 shadow-2xl"
             }`}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -112,58 +101,75 @@ const PricingPlan = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-4 text-sky-700">
-              {plan.title}
-            </h3>
-            {plan.title !== "Custom" && (
-              <>
-                <h2 className="text-4xl font-bold my-6 text-sky-500">
-                  ₹{plan.price}
-                </h2>
-                <p className="text-md mb-4 font-bold">
-                  No of Units:{" "}
-                  <span className="text-sky-500">{plan.units}</span>
-                </p>
-                <ul className="mb-12">
-                  {plan.features.map((feature, i) => (
-                    <li
-                      key={i}
-                      className="flex justify-between items-center text-sm mb-1 text-gray-700"
-                    >
-                      {feature}
-                      <DoneIcon className="text-sky-500" />
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            {plan.title === "Custom" && (
-              <>
-                {customUnits > 0 && (
-                  <h2 className="text-4xl font-bold my-4 text-sky-500">
-                    ₹{calculateCustomPrice()}
-                  </h2>
+            <div className="flex flex-row flex-1">
+              <img
+                src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt={`${plan.title} image`}
+                className="w-1/2 object-cover rounded-t-md"
+              />
+
+              <div className="p-4 w-1/2">
+                {plan.title !== "Custom" && (
+                  <>
+                    <p className="text-md mb-4 font-bold">
+                      No of Units:
+                      <span className="text-sky-500"> {plan.units}</span>
+                    </p>
+                    <ul className="mb-4">
+                      {plan.features.map((feature, i) => (
+                        <li
+                          key={i}
+                          className="flex justify-between items-center text-sm mb-1 text-gray-700"
+                        >
+                          {feature}
+                          <DoneIcon className="text-sky-500" />
+                        </li>
+                      ))}
+                    </ul>
+                  </>
                 )}
-                <input
-                  type="number"
-                  value={customUnits}
-                  onChange={handleCustomUnitsChange}
-                  placeholder="Enter number of units"
-                  className="w-full mb-4 p-2 border-2 rounded-lg"
-                  min="0"
-                />
-                <p className="text-md mb-4 font-bold">
-                  No of Units:{" "}
-                  <span className="text-sky-500">{customUnits}</span>
-                </p>
-                <p className="text-md mb-4 italic">
-                  <span className="text-sky-700">
-                    ~This will include any Room, Hall, Kitchen Whatever you want
-                    to automate in your home
-                  </span>
-                </p>
-              </>
-            )}
+                {plan.title === "Custom" && (
+                  <>
+                    <p className="text-md mb-4 font-bold">
+                      No of Units:{" "}
+                      <span className="text-sky-500">{customUnits}</span>
+                    </p>
+                    <input
+                      type="number"
+                      value={customUnits}
+                      onChange={handleCustomUnitsChange}
+                      placeholder="Enter Units"
+                      className="w-full mb-4 p-2 border-2 rounded-lg"
+                      min="0"
+                    />
+
+                    <p className="text-md mb-4 italic ">
+                      <span className="text-sky-700 justify-items-center">
+                        ~Tailor your plan to fit your unique requirements and
+                        preferences.
+                      </span>
+                    </p>
+                  </>
+                )}
+              </div>
+            </div>
+            <div className="bg-sky-500 p-2 text-white rounded-b-lg mt-auto ">
+              {plan.title === "Custom" ? (
+                <div className="items-center flex flex-row justify-between px-4">
+                  <h2 className="text-md font-bold mt-2 mb-2 ">Custom Plan</h2>
+                  <h2 className="text-4xl font-bold mt-2 mb-2 text-white">
+                    ₹{calculateCustomPrice() || "0"}
+                  </h2>
+                </div>
+              ) : (
+                <div className="items-center flex flex-row justify-between px-4">
+                  <h2 className="text-md font-bold mt-2 mb-2">{plan.title}</h2>
+                  <h2 className="text-4xl font-bold mt-2 mb-2  text-white">
+                    ₹{plan.price}
+                  </h2>
+                </div>
+              )}
+            </div>
           </motion.div>
         ))}
       </div>
