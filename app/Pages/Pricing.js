@@ -64,18 +64,18 @@ const PricingPlan = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      whileInView={{ opacity: 1 }}
+      initial={{ y: -20, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true }}
-      className="bg-white py-12"
+      transition={{ duration: 0.6 }}
+      className="bg-white py-20"
     >
       <motion.h2
         className="text-3xl font-bold text-center mb-2 text-sky-500"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
       >
         Pricing Plan
       </motion.h2>
@@ -95,11 +95,10 @@ const PricingPlan = () => {
                 ? "  border-sky-700 shadow-2xl text-black"
                 : "  border-sky-700 shadow-2xl"
             }`}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 * index }}
           >
             <div className="flex flex-row flex-1">
               <img

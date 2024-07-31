@@ -15,12 +15,12 @@ const Navbar = () => {
   };
 
   const linkClass =
-    "cursor-pointer hover:text-sky-400 hover: px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
+    "cursor-pointer hover:text-sky-100 hover: px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
 
   const activeClass = "animate-spin border-b-4 border-white text-sky-500";
-  const mobileActive = "border-b-4 border-white text-sky-500 bg-white";
+  const mobileActive = "border-b-4 border-white text-sky-500 ";
   const mobileLink =
-    "cursor-pointer hover:text-sky-400 hover: px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
+    "cursor-pointer hover:text-sky-400 text-white hover: px-3 py-2 rounded-md text-md font-medium transition-transform transform hover:scale-110 duration-500 ease-in-out";
 
   useEffect(() => {
     const handleScroll = () => {
