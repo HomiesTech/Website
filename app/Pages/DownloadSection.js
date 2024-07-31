@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import AppleIcon from "@mui/icons-material/Apple";
@@ -8,10 +9,10 @@ import image3 from "../assets/image3.jpeg";
 
 export default function DownloadSection() {
   return (
-    <div className="container mx-auto py-16 mt-18 px-4 md:px-8 lg:px-20">
+    <div className="container mx-auto py-16 mt-18 px-4 md:px-8 lg:px-20 ">
       <div className="flex flex-wrap lg:flex-nowrap items-center gap-5 mt-20">
-        <div className="w-full lg:w-1/2 ">
-          <div className="relative flex justify-center items-center ">
+        <div className="w-full lg:w-1/2">
+          <div className="relative flex justify-center items-center">
             <div className="relative z-1 transform lg:-rotate-45 -rotate-12">
               <Image
                 src={image1}
@@ -42,7 +43,7 @@ export default function DownloadSection() {
           </div>
         </div>
         <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-          <h5 className="text-2xl text-blue-500 font-bold font-poppins">
+          <h5 className="text-2xl text-sky-500 font-bold font-poppins">
             Download
           </h5>
           <h1 className="mb-4 text-2xl md:text-4xl font-bold font-poppins">
@@ -52,7 +53,7 @@ export default function DownloadSection() {
             <div className="mt-4 md:mt-8 p-2">
               <a
                 href="#"
-                className="flex items-center bg-gradient-to-r from-blue-400 to-blue-700 text-white font-semibold py-3 px-4 rounded-xl shadow-lg hover:from-blue-300 hover:to-blue-500 transition duration-300"
+                className="flex items-center bg-gradient-to-r from-sky-400 to-sky-600 text-white font-semibold py-3 px-4 rounded-xl shadow-lg shadow-white transition duration-300"
               >
                 <AppleIcon className="mr-2" />
                 <span>Available on App Store</span>
@@ -61,7 +62,7 @@ export default function DownloadSection() {
             <div className="mt-4 md:mt-8 p-2">
               <a
                 href="#"
-                className="flex items-center bg-gradient-to-r from-blue-400 to-blue-700 text-white font-semibold py-3 px-4 rounded-xl shadow-lg transition duration-300"
+                className="flex items-center bg-gradient-to-r from-sky-400 to-sky-600 text-white font-semibold py-3 px-4 rounded-xl shadow-lg transition duration-300"
               >
                 <AdbIcon className="mr-2" />
                 <span>Available on Play Store</span>

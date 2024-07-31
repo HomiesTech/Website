@@ -1,7 +1,7 @@
 // components/Faq.js
 "use client";
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 const faqData = [
   {
     question: "What is the product used for?",
@@ -65,11 +65,7 @@ const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
-    if (activeIndex === index) {
-      setActiveIndex(null);
-    } else {
-      setActiveIndex(index);
-    }
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
@@ -77,24 +73,46 @@ const Faq = () => {
       <div className="container mx-auto py-1 px-5">
         <div className="text-center mb-6">
           <div className="mx-auto align-middle justify-center pt-12 md:pt-16 px-4 md:px-0">
-            <h1 className="text-3xl text-black text-center font-bold uppercase font-poppins">
+            <motion.h1
+              className="text-2xl text-black text-center font-bold uppercase font-poppins"
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
               Frequently Asked Questions
-            </h1>
-            <hr className="border-blue-600 border-2 w-32 mx-auto mt-2 mb-6"></hr>
+            </motion.h1>
+            <motion.hr
+              className="border-sky-600 border-2 w-32 mx-auto mt-2 mb-6"
+              initial={{ width: 0 }}
+              animate={{ width: "32px" }}
+              transition={{ duration: 0.5 }}
+            />
           </div>
         </div>
-        <div className="space-y-2">
+        <motion.div
+          className="space-y-2"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: { opacity: 1, scale: 1 },
+          }}
+          transition={{ delayChildren: 0.3, staggerChildren: 0.2 }}
+        >
           {faqData.map((item, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-gradient-to-r from-white to-white font-poppins rounded-lg m-1 p-1 "
+              className="bg-gradient-to-r from-white to-white font-poppins rounded-lg m-1 p-1"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5 }}
             >
               <button
                 className="w-full text-left px-4 py-2 focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
-                <div className="flex justify-between items-center bg-gradient-to-r font-poppins from-blue-600 via-blue-600  to-blue-600 p-5 rounded-md">
-                  <h2 className="text-lg font-medium text-white ">
+                <div className="flex justify-between items-center bg-gradient-to-r font-poppins from-sky-500 to-sky-500 p-3 rounded-md">
+                  <h2 className="text-md font-medium text-white">
                     {item.question}
                   </h2>
                   <span className="text-white">
@@ -103,15 +121,20 @@ const Faq = () => {
                 </div>
               </button>
               {activeIndex === index && (
-                <div className="px-4 pb-4">
-                  <p className="text-stone-500 bg-white p-2 rounded-md">
+                <motion.div
+                  className="px-4 pb-4"
+                  initial={{ height: 0 }}
+                  animate={{ height: "auto" }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <p className="text-stone-500 bg-white p-2 rounded-md text-md">
                     {item.answer}
                   </p>
-                </div>
+                </motion.div>
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
