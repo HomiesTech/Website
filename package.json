@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build && next export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -24,11 +26,13 @@
     "react-leaflet": "^4.2.1",
     "react-scroll": "^1.9.0",
     "react-toastify": "^10.0.5",
+    "sharp": "^0.33.4",
     "tw-elements": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
+    "gh-pages": "^6.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
