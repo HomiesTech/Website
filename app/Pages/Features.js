@@ -2,89 +2,141 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "tw-elements";
-import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
-import DoneIcon from "@mui/icons-material/Done";
-import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import InstallMobileIcon from "@mui/icons-material/InstallMobile";
-import AccessibilityIcon from "@mui/icons-material/Accessibility";
-import Person2Icon from "@mui/icons-material/Person2";
-import WifiIcon from "@mui/icons-material/Wifi";
-import Diversity1Icon from "@mui/icons-material/Diversity1";
-import RecommendIcon from "@mui/icons-material/Recommend";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
+import Steps from "./Steps";
 
 const Features = () => {
   const featuresData = [
     {
-      Icon: AccessibilityIcon,
+      Icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+          />
+        </svg>
+      ),
       title: "Easily Accessible",
       description:
         "Manage all home functions conveniently through our user-friendly mobile app, ensuring effortless control at your fingertips",
     },
     {
-      Icon: Person2Icon,
+      Icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+          />
+        </svg>
+      ),
       title: "Editable Profile",
       description:
         "Personalize your smart home experience by customizing room names and other details with ease, adapting to your preferences seamlessly.",
     },
     {
-      Icon: WifiIcon,
+      Icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"
+          />
+        </svg>
+      ),
       title: "Multiple Connection",
       description:
         "Seamlessly integrate and control every room in your home via robust WiFi connectivity, enhancing accessibility and convenience.",
     },
     {
-      Icon: Diversity1Icon,
+      Icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 0 1 1.06 0Z"
+          />
+        </svg>
+      ),
       title: "User Friendly",
       description:
         "Designed for simplicity, our system ensures that anyone can operate and enjoy the benefits of smart home technology without complexity",
     },
     {
-      Icon: PhoneAndroidIcon,
+      Icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+          />
+        </svg>
+      ),
       title: "Customizable Interface",
       description:
         "Tailor your home environment with personalized backgrounds and icons for each room within our intuitive app, reflecting your unique style and needs.",
     },
     {
-      Icon: RecommendIcon,
+      Icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+          />
+        </svg>
+      ),
       title: "Support System",
       description:
         "Access prompt assistance with our dedicated support system, offering reliable help via email and phone directly from the app whenever you need it.",
     },
   ];
 
-  const stepsData = [
-    {
-      Icon: InstallMobileIcon,
-      title: "Install The App",
-      description:
-        "The app is easy to use as you just have to download the app from the website/app store/playstore create an account with username and password. Now connect the app to the dedicated WIFI and discover the device",
-    },
-    {
-      Icon: AccountBoxIcon,
-      title: "Set Up Your Profile",
-      description:
-        "Boom, you are ready to go now your app and device are paired successfully now you can control your home through our app. After the connection you will see rooms as per the devices at your home",
-    },
-    {
-      Icon: DoneIcon,
-      title: "Enjoy the Features",
-      description:
-        "Long hold them and you can now change the names of the devices as per your need. Now as many appliances are connected with the device will be shown on the room section. While you are in the room section you can see the appliances, Tap on them and See the magic.",
-    },
-  ];
-  const backgroundImageUrl =
-    "https://img.freepik.com/premium-photo/wavy-shape-business-background-paper-cut-style_320929-216.jpg";
-
   return (
-    <section
-      className="mt-2 pt-[1.5rem] pb-[1.5rem] bg-transparent "
-      /* style={{
-        backgroundImage: `url(${backgroundImageUrl})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }} */
-    >
+    <section className="mt-2 pt-[1.5rem] pb-[1.5rem] bg-transparent">
       <div className="mx-auto align-middle justify-center pt-2 md:pt-16 px-4 md:px-0">
         <motion.h1
           className="text-2xl text-black text-center font-bold uppercase font-poppins"
@@ -123,7 +175,7 @@ const Features = () => {
             transition={{ duration: 0.6, delay: 0.2 * index }}
           >
             <div className="bg-gradient-to-r from-sky-300 to-sky-600 rounded-full h-[3rem] w-[3rem] flex items-center justify-center p-4 m-4 text-white">
-              <Icon />
+              {Icon}
             </div>
             <motion.h1
               className="text-lg font-bold text-center text-sky-700"
@@ -146,64 +198,8 @@ const Features = () => {
           </motion.div>
         ))}
       </div>
-      <div className="flex flex-col items-center justify-center p-10 m-10">
-        <div>
-          <motion.p
-            className="text-xl text-sky-500 font-flory font-bold text-center"
-            initial={{ y: -20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            How It Works
-          </motion.p>
-          <motion.h1
-            className="text-2xl lg:text-4xl font-bold text-center font-poppins"
-            initial={{ y: -20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            3 Easy Steps
-          </motion.h1>
-        </div>
-        <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 m-2 p-2 mt-8 pt-8">
-            {stepsData.map(({ Icon, title, description }, index) => (
-              <motion.div
-                key={index}
-                className="relative bg-feature-image border-l-2 border-r-2 border-sky-700 p-6 rounded-md flex flex-col items-center transition-transform transform hover:scale-110 duration-500 ease-in-out"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.3 * index }}
-              >
-                <div className="bg-gradient-to-r from-sky-400 to-sky-600 rounded-full w-20 h-20 flex items-center justify-center">
-                  <Icon className="text-white text-4xl" />
-                </div>
-                <motion.h1
-                  className="text-xl font-bold text-center mt-10 uppercase"
-                  initial={{ y: -20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                >
-                  {title}
-                </motion.h1>
-                {/* <motion.p
-                  className="text-gray-500 text-justify p-2 m-2"
-                  initial={{ y: -20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.6 }}
-                >
-                  {description}
-                </motion.p> */}
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
+
+      <Steps />
     </section>
   );
 };

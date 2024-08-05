@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -17,13 +18,34 @@ const Footer = () => {
     >
       <div className="container mx-auto py-16 px-4 md:px-8">
         <motion.div
+          className="flex flex-row justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          <Link href="/privacy-policy" passHref>
+            <motion.a
+              className="text-white p-3 hover:shadow-pink-200 transition duration-300"
+              whileHover={{ scale: 1.1 }}
+            >
+              <p className="underline m-2 p-2">Privacy Policy</p>
+            </motion.a>
+          </Link>
+          <Link href="/terms" passHref>
+            <motion.a
+              className="text-white p-3 hover:shadow-pink-200 transition duration-300"
+              whileHover={{ scale: 1.1 }}
+            >
+              <p className="underline m-2 p-2">Terms & Conditions</p>
+            </motion.a>
+          </Link>
+        </motion.div>
+        <motion.div
           className="flex flex-row align-middle justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          {/* Social Media Icons */}
-          {/* Add other icons here */}
           <motion.a
             href="https://www.instagram.com/homenetics_official/"
             target="_blank"

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import DoneIcon from "@mui/icons-material/Done";
-import img from "../assets/pricing.jpg"; // Adjust import as needed
 
 const PricingPlan = () => {
   const [customUnits, setCustomUnits] = useState("");
@@ -29,6 +28,8 @@ const PricingPlan = () => {
         "1 Washroom",
         "1 Miscellaneous",
       ],
+      image:
+        "https://cms.interiorcompany.com/wp-content/uploads/2023/11/simple-home-design-Warm-grey-exteriors.png",
     },
     {
       title: "2 BHK",
@@ -41,6 +42,8 @@ const PricingPlan = () => {
         "2 Washroom",
         "2 Miscellaneous",
       ],
+      image:
+        "https://cms.interiorcompany.com/wp-content/uploads/2023/11/simple-home-design-green-ambience.png",
     },
     {
       title: "3 BHK",
@@ -53,12 +56,16 @@ const PricingPlan = () => {
         "3 Washroom",
         "3 Miscellaneous",
       ],
+      image:
+        "https://img.onmanorama.com/content/dam/mm/en/lifestyle/decor/images/2023/6/1/house-middleclass.jpg.transform/576x300/image.jpg",
     },
     {
       title: "Custom",
       price: "",
       units: "",
       features: ["It includes"],
+      image:
+        "https://assets.architecturaldigest.in/photos/60083e76274aca243711c3a4/16:9/w_2560%2Cc_limit/ghaziabad-uttar-pradesh-homes-photos-1366x768.jpg",
     },
   ];
 
@@ -86,14 +93,14 @@ const PricingPlan = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
       />
-      <div className="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 m-2 p-2 gap-0 ">
+      <div className="flex flex-wrap justify-center space-y-4 md:space-y-0 md:space-x-4 m-2 p-2 gap-0">
         {plans.map((plan, index) => (
           <motion.div
             key={plan.title}
             className={`bg-white bg-opacity-75 rounded-lg shadow-lg w-full sm:w-80 md:w-80 lg:w-80 xl:w-80 transition-transform transform hover:scale-110 duration-500 ease-in-out flex flex-col ${
               plan.title === "Custom"
-                ? "  border-sky-700 shadow-2xl text-black"
-                : "  border-sky-700 shadow-2xl"
+                ? "border-sky-700 shadow-2xl text-black"
+                : "border-sky-700 shadow-2xl"
             }`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -102,12 +109,12 @@ const PricingPlan = () => {
           >
             <div className="flex flex-row flex-1">
               <img
-                src="https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src={plan.image}
                 alt={`${plan.title} image`}
-                className="w-1/2 object-cover rounded-t-md"
+                className="w-1/3 object-cover rounded-t-md"
               />
 
-              <div className="p-4 w-1/2">
+              <div className="p-4 w-2/3">
                 {plan.title !== "Custom" && (
                   <>
                     <p className="text-md mb-4 font-bold">
@@ -142,8 +149,8 @@ const PricingPlan = () => {
                       min="0"
                     />
 
-                    <p className="text-md mb-4 italic ">
-                      <span className="text-sky-700 justify-items-center">
+                    <p className="text-md mb-4 italic">
+                      <span className="text-sky-700">
                         ~Tailor your plan to fit your unique requirements and
                         preferences.
                       </span>
@@ -152,10 +159,10 @@ const PricingPlan = () => {
                 )}
               </div>
             </div>
-            <div className="bg-sky-500 p-2 text-white rounded-b-lg mt-auto ">
+            <div className="bg-sky-500 p-2 text-white rounded-b-lg mt-auto">
               {plan.title === "Custom" ? (
                 <div className="items-center flex flex-row justify-between px-4">
-                  <h2 className="text-md font-bold mt-2 mb-2 ">Custom Plan</h2>
+                  <h2 className="text-md font-bold mt-2 mb-2">Custom Plan</h2>
                   <h2 className="text-4xl font-bold mt-2 mb-2 text-white">
                     ₹{calculateCustomPrice() || "0"}
                   </h2>
@@ -163,7 +170,7 @@ const PricingPlan = () => {
               ) : (
                 <div className="items-center flex flex-row justify-between px-4">
                   <h2 className="text-md font-bold mt-2 mb-2">{plan.title}</h2>
-                  <h2 className="text-4xl font-bold mt-2 mb-2  text-white">
+                  <h2 className="text-4xl font-bold mt-2 mb-2 text-white">
                     ₹{plan.price}
                   </h2>
                 </div>
