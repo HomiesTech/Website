@@ -6,6 +6,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -61,7 +62,7 @@ const Footer = () => {
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <BsInstagram />
+            <BsGithub />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/company/homenetics-technology-pvt-ltd/"
@@ -70,7 +71,7 @@ const Footer = () => {
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <BsInstagram />
+            <BsLinkedin />
           </motion.a>
           <motion.a
             href="mailto:Homenetics_Official@homenetics.in"
@@ -79,14 +80,14 @@ const Footer = () => {
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <BsInstagram />
+            <IoMdMail />
           </motion.a>
           <motion.a
             href="tel:+9518499946"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <BsInstagram />
+            <BsFillTelephoneFill />
           </motion.a>
         </motion.div>
         <motion.div

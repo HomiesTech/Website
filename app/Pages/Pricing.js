@@ -128,7 +128,7 @@ const PricingPlan = () => {
                           className="flex justify-between items-center text-sm mb-1 text-gray-700"
                         >
                           {feature}
-                          <bsCheck2 className="text-sky-500" />
+                          <BsCheck2 className="text-sky-500" />
                         </li>
                       ))}
                     </ul>
