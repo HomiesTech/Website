@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import DoneIcon from "@mui/icons-material/Done";
 
+import { BsCheck2 } from "react-icons/bs";
 const PricingPlan = () => {
   const [customUnits, setCustomUnits] = useState("");
   const customPricePerUnit = 3000;
@@ -128,7 +128,7 @@ const PricingPlan = () => {
                           className="flex justify-between items-center text-sm mb-1 text-gray-700"
                         >
                           {feature}
-                          <DoneIcon className="text-sky-500" />
+                          <bsCheck2 className="text-sky-500" />
                         </li>
                       ))}
                     </ul>

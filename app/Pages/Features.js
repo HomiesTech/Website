@@ -15,7 +15,7 @@ const Features = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6"
+          className="w-6 h-6"
         >
           <path
             strokeLinecap="round"
@@ -36,7 +36,7 @@ const Features = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6"
+          className="size-10"
         >
           <path
             strokeLinecap="round"
@@ -57,7 +57,7 @@ const Features = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6"
+          className="size-10"
         >
           <path
             strokeLinecap="round"
@@ -78,7 +78,7 @@ const Features = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6"
+          className="size-10"
         >
           <path
             strokeLinecap="round"
@@ -99,7 +99,7 @@ const Features = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6"
+          className="size-10"
         >
           <path
             strokeLinecap="round"
@@ -120,7 +120,7 @@ const Features = () => {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6"
+          className="size-10"
         >
           <path
             strokeLinecap="round"

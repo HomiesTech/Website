@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import AppleIcon from "@mui/icons-material/Apple";
-import AdbIcon from "@mui/icons-material/Adb";
+import { BsApple } from "react-icons/bs";
+import { BsAndroid2 } from "react-icons/bs";
 import image1 from "../assets/image1.jpeg";
 import image2 from "../assets/image2.jpeg";
 import image3 from "../assets/image3.jpeg";
@@ -55,7 +55,7 @@ export default function DownloadSection() {
                 href="#"
                 className="flex items-center bg-gradient-to-r from-sky-400 to-sky-600 text-white font-semibold py-3 px-4 rounded-xl shadow-lg shadow-white transition duration-300"
               >
-                <AppleIcon className="mr-2" />
+                <BsApple className="mr-2" />
                 <span>Available on App Store</span>
               </a>
             </div>
@@ -64,7 +64,7 @@ export default function DownloadSection() {
                 href="#"
                 className="flex items-center bg-gradient-to-r from-sky-400 to-sky-600 text-white font-semibold py-3 px-4 rounded-xl shadow-lg transition duration-300"
               >
-                <AdbIcon className="mr-2" />
+                <BsAndroid2 className="mr-2" />
                 <span>Available on Play Store</span>
               </a>
             </div>

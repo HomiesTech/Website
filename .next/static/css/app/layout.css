@@ -745,10 +745,6 @@ video {
   width: 2.5rem;
   height: 2.5rem;
 }
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
-}
 .h-16 {
   height: 4rem;
 }
@@ -760,6 +756,9 @@ video {
 }
 .h-32 {
   height: 8rem;
+}
+.h-6 {
+  height: 1.5rem;
 }
 .h-64 {
   height: 16rem;
@@ -808,6 +807,9 @@ video {
 }
 .w-32 {
   width: 8rem;
+}
+.w-6 {
+  width: 1.5rem;
 }
 .w-72 {
   width: 18rem;

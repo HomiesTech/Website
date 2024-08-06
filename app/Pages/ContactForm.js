@@ -63,7 +63,6 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col md:flex-row bg-white p-4">
       <div className="md:w-1/2 w-full m-4 p-4 pt-[4rem] z-10 bg-white h-[40rem] pr-[4rem]">
-        <title>Company Location</title>
         <meta name="description" content="Company location map" />
         <link rel="icon" href="/favicon.ico" />
 

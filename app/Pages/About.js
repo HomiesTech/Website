@@ -2,9 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
-import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
-import AccessibilityIcon from "@mui/icons-material/Accessibility";
 import { aboutContent } from "../Content/about";
 
 const About = () => {

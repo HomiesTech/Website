@@ -29,6 +29,7 @@ export default function Steps() {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
+          className="text-white"
           stroke="#000000"
           strokeWidth="2"
           strokeLinecap="round"
@@ -46,6 +47,7 @@ export default function Steps() {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
+          color="#FFF"
           height="24"
           viewBox="0 0 24 24"
           fill="none"

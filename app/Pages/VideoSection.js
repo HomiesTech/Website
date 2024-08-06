@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-
+import { BsFillPlayBtnFill } from "react-icons/bs";
 const VideoSection = () => {
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 
@@ -46,7 +45,7 @@ const VideoSection = () => {
               className="bg-sky-600 text-white py-3 px-3 rounded flex items-center justify-center"
               onClick={() => setIsVideoVisible(true)}
             >
-              <PlayCircleIcon style={{ fontSize: 50 }} />
+              <BsFillPlayBtnFill style={{ fontSize: 50 }} />
             </button>
           </div>
         )}

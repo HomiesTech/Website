@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import EmailIcon from "@mui/icons-material/Email";
-import PhoneIcon from "@mui/icons-material/Phone";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "react-scroll";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -53,7 +52,7 @@ const Footer = () => {
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <InstagramIcon />
+            <BsInstagram />
           </motion.a>
           <motion.a
             href="https://github.com/homiesTech"
@@ -62,7 +61,7 @@ const Footer = () => {
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <GitHubIcon />
+            <BsInstagram />
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/company/homenetics-technology-pvt-ltd/"
@@ -71,7 +70,7 @@ const Footer = () => {
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <LinkedInIcon />
+            <BsInstagram />
           </motion.a>
           <motion.a
             href="mailto:Homenetics_Official@homenetics.in"
@@ -80,14 +79,14 @@ const Footer = () => {
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <EmailIcon />
+            <BsInstagram />
           </motion.a>
           <motion.a
             href="tel:+9518499946"
             className="text-white p-3 hover:shadow-pink-200 transition duration-300"
             whileHover={{ scale: 1.1 }}
           >
-            <PhoneIcon />
+            <BsInstagram />
           </motion.a>
         </motion.div>
         <motion.div

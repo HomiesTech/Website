@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import logo from "../assets/HomiesLogo.png";
-import MenuIcon from "@mui/icons-material/Menu";
+import { BsPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +51,7 @@ const Navbar = () => {
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               onClick={toggleMenu}
             >
-              <MenuIcon className="text-transparent bg-transparent" />
+              <BsPersonLinesFill className="text-transparent bg-transparent" />
             </button>
           </div>
           <div className="flex-1 flex items-center justify-between">
