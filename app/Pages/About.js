@@ -34,7 +34,7 @@ const About = () => {
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+          d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
         />
       </svg>
     ),
@@ -90,26 +90,34 @@ const About = () => {
         {aboutContent.sections.map((section, index) => (
           <div
             key={index}
-            className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-white  border-b-2  shadow-md shadow-sky-700 border-sky-700 p-4 rounded-md md:m-4 transition-transform transform hover:scale-110 duration-500 ease-in-out"
+            className="flex flex-col items-center w-full md:w-1/3 px-4 mb-8 bg-white  border-b-2 border-sky-500 md:pb-8 pb-4 md:mb-0 md:border-b-0 md:border-r-2"
           >
-            <div className="flex text-white items-center p-4 m-4 justify-center rounded-full bg-gradient-to-r from-sky-300 to-sky-600 h-32 w-32">
-              {icons[section.icon]}
+            <div className="flex items-center mb-2">
+              <motion.div
+                className="mr-4 text-sky-500"
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                {icons[section.icon]}
+              </motion.div>
+              <motion.h2
+                className="text-lg font-bold text-gray-800"
+                initial={{ y: -20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                {section.title}
+              </motion.h2>
             </div>
-            <motion.h3
-              className="text-sky-700 text-center font-bold text-lg p-2 mt-4"
+            <motion.p
+              className="text-center text-md text-gray-500"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              {section.title}
-            </motion.h3>
-            <motion.p
-              className="text-center text-gray-500 p-2 m-2 text-sm"
-              initial={{ y: -20, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.8 }}
             >
               {section.description}
             </motion.p>
