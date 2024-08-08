@@ -25,19 +25,19 @@ export default function Home() {
       <section id="video">
         <VideoSection />
       </section>
-      <section id="pricing" className="mt-20">
+      <section id="pricing" className="mt-30">
         <Pricing />
       </section>
-      <section id="download" className="mt-20">
+      <section id="download">
         <DownloadSection />
       </section>
       {/*<section id="testimonial" className="mt-20">
         <Testimonial />
   </section> */}
-      <section id="faq" className="mt-20">
+      <section id="faq">
         <Faq />
       </section>
-      <section id="contact" className="mt-20">
+      <section id="contact">
         <ContactForm />
       </section>
 

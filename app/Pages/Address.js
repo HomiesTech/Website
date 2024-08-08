@@ -21,7 +21,7 @@ const Address = () => {
       center={companyLocation}
       zoom={13}
       style={{ height: "100%", width: "100%" }}
-      className="rounded-lg"
+      className="rounded-lg "
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

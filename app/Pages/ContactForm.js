@@ -62,7 +62,7 @@ const ContactForm = () => {
 
   return (
     <div className="flex flex-col md:flex-row bg-white p-4">
-      <div className="md:w-1/2 w-full m-4 p-4 pt-[4rem] z-10 bg-white h-[40rem] pr-[4rem]">
+      <div className="md:w-1/2 w-full m-4 p-4 pt-[4rem] z-0 bg-white h-[40rem] pr-[4rem]">
         <meta name="description" content="Company location map" />
         <link rel="icon" href="/favicon.ico" />
 
@@ -72,7 +72,7 @@ const ContactForm = () => {
             <h1 className="text-4xl font-bold mt-2">Visit Us Here</h1>
           </div>
 
-          <div className="w-full h-96 rounded-md m-2 p-2">
+          <div className="w-full h-96 rounded-md m-2 p-2 z-0">
             <Address />
           </div>
         </main>
