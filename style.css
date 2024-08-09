@@ -6,8 +6,13 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 }
+.logo-1{
+	width: 10rem;
+	height: 3rem;
+}
 a {
 	color:#ffffff;
+	
 }
 a:hover {
 	color:#6cd6f4;
