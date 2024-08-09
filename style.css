@@ -15,7 +15,7 @@ a {
 	
 }
 a:hover {
-	color:#6cd6f4;
+	color:#2706f7;
 }
 h1, h2, h3 {
 	font-weight: 700;
@@ -44,11 +44,13 @@ h6 {
 	background: transparent;
 	z-index: 1030;
 }
-.navbar .active {
-	color: #06b9ea !important;
+.hero-img .active{
+	color: #ffffff !important;
 }
-.navbar .navbar-brand {
+.nav-rest .active {
+	color: #2107c7 !important;
 }
+
 .navbar .nav-item {
 	margin: 0 5px;
 	padding: 0;
@@ -520,6 +522,7 @@ input {
 }
 @media all and (max-width:768px) {
 .nav-scroll .navbar-brand img, .navbar-brand img {
+
 	transform: scale(0.75) !important;
 	-webkit-transform: scale(0.75) !important;
 }
