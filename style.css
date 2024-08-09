@@ -6,11 +6,16 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 }
+.logo-1{
+	width: 10rem;
+	height: 3rem;
+}
 a {
-	color:#4287f5;
+	color:#ffffff;
+	
 }
 a:hover {
-	color:#4287f5;
+	color:#6cd6f4;
 }
 h1, h2, h3 {
 	font-weight: 700;
@@ -40,7 +45,7 @@ h6 {
 	z-index: 1030;
 }
 .navbar .active {
-	color: #4287f5 !important;
+	color: #06b9ea !important;
 }
 .navbar .navbar-brand {
 }
@@ -97,8 +102,8 @@ h6 {
 	position: relative;
 }
 .banner {
-	background: #5533fc;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: #2388ed;
+	background: linear-gradient(to left, #0444b2, #7e9cf7);
 	padding:100px 0px;
 	position:relative;
 }
@@ -158,7 +163,7 @@ h6 {
 .line {
 	height: 2px;
 	width: 50px;
-	background: #8e1efc;
+	background: #2388ed;
 	display: block;
 	margin: 20px auto 20px;
 }
@@ -168,7 +173,7 @@ h6 {
 	left: 50%;
 	width: 150px;
 	height: 2px;
-	border-bottom: 2px dashed #8e1efc;
+	border-bottom: 2px dashed #2388ed;
 	margin-left: -75px;
 }
 .sectioner-header p {
@@ -187,12 +192,15 @@ h6 {
 	width: 135px;
 	height: 135px;
 	border-radius: 100px;
-	background: #7a60ff;
-	background:  linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: #2388ed;
+	background: linear-gradient(to left, #0444b2, #7e9cf7);
 	color: #ffffff;
 	font-size: 50px;
 	line-height: 135px;
 	margin: 0 auto;
+}
+h5{
+	color: #2d48f2;
 }
 .icon-box h5 {
 	margin-top:30px;
@@ -204,16 +212,16 @@ h6 {
 	margin: 0 auto;
 }
 .about-btn {
-	color: #8e1efc;
+	color: #2388ed;
 	padding: 10px 40px;
-	border: 2px solid #8e1efc;
+	border: 2px solid #2388ed;
 	border-radius: 7px;
 	margin-top: 30px;
 	display: inline-block;
 	font-size: 18px;
 }
 .about-btn:hover {
-	background:#8e1efc;
+	background:#2388ed;
 	color:#ffffff;
 	text-decoration:none;
 }
@@ -223,7 +231,7 @@ h6 {
 	overflow: hidden;
 }
 .video-overlay {
-	background: linear-gradient(to left, rgba(122, 96, 255, 0.90), rgba(205, 159, 250, 0.90));
+	background: linear-gradient(to left, #0444b2, #7e9cf7);
 }
 .video-section h3 {
 	font-weight: 600;
@@ -236,7 +244,7 @@ h6 {
 	height: 70px;
 	border-radius: 100px;
 	background: #ffffff;
-	color: #8e1efc;
+	color: #2388ed;
 	font-size: 30px;
 	line-height: 70px;
 	margin: 0 auto;
@@ -291,6 +299,7 @@ h6 {
 	font-size: 13px;
 }
 .icon-border {
+	color: rgb(41, 30, 252);
 }
 .icon-border span {
 	display: block;
@@ -298,10 +307,10 @@ h6 {
 	width: 50px;
 	height: 50px;
 	border-radius: 100px;
-	color: rgb(142, 30, 252);
+	color: rgb(41, 30, 252);
 	font-size: 18px;
 	line-height: 50px;
-	border: 1px solid rgb(142, 30, 252);
+	border: 1px solid rgb(85, 30, 252);
 }
 .team {
 	background: #fafafa;
@@ -315,14 +324,14 @@ h6 {
 	width: 70%;
 }
 .team-detail h4 {
-	color:rgb(142, 30, 252);
+	color:rgb(45, 30, 252);
 	margin-top: 20px;
 	font-size: 17px;
 	margin-bottom: 0px;
 }
 .testimonial {
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: #2388ed;
+	background: linear-gradient(to left, #0444b2, #7e9cf7);
 	padding:100px 0px;
 	position:relative;
 }
@@ -434,15 +443,15 @@ input {
 	color: #fff;
 	border-radius: 2rem;
 	border: 0;
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: #2388ed;
+	background: linear-gradient(to left, #0444b2, #7e9cf7);
 	cursor:pointer;
 }
 .contact-info {
 	padding: 2rem 2rem 1rem;
 	border-radius: 8px;
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: #2388ed;
+	background: linear-gradient(to left, #0444b2, #7e9cf7);
 }
 .contact-item {
 	margin:23px 0px;
@@ -455,8 +464,8 @@ input {
 	margin: 0;
 }
 .download {
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: #2388ed;
+	background: linear-gradient(to left, #0444b2, #7e9cf7);
 	padding:100px 0px;
 	position:relative;
 }
