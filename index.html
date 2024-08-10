@@ -118,9 +118,10 @@
           </div>
         </div>
       </div>
-      <span class="svg-wave">
+
+      <!-- <span class="svg-wave">
         <img class="svg-hero" src="images/applight-wave.svg" />
-      </span>
+      </span> -->
     </section>
 
     <!-------Banner End------->
@@ -594,79 +595,38 @@
                       Submit
                     </button>
                   </form>
-
-                  <script>
-                    document
-                      .getElementById("contact_form")
-                      .addEventListener("submit", function (event) {
-                        event.preventDefault();
-
-                        const formData = {
-                          fullName: document.getElementById("your_name").value,
-                          email: document.getElementById("email").value,
-                          subject: document.getElementById("subject").value,
-                          message: document.getElementById("message").value,
-                        };
-
-                        fetch(
-                          "https://script.google.com/macros/s/AKfycbxxRNaReJu_TRRH8U_u2vOLQIbwhlFFxJmFsF-F_F8I2dhjYyz6OadhxxK3h6H16ZXe/exec",
-                          {
-                            method: "POST",
-                            headers: {
-                              "Content-Type": "application/json",
-                            },
-                            body: JSON.stringify(formData),
-                          }
-                        )
-                          .then((response) => response.text())
-                          .then((data) => {
-                            console.log("Success:", data);
-                            alert("Message sent successfully!");
-                          })
-                          .catch((error) => {
-                            console.error("Error:", error);
-                            alert("An error occurred.");
-                          });
-                      });
-                  </script>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="contact-info white">
-                    <div class="contact-item media">
-                      <i
-                        class="fa fa-map-marker-alt media-left media-right-margin"
-                      ></i>
+                    <div class="contact-item">
+                      <i class="fa fa-map-marker-alt"></i>
                       <div class="media-body">
                         <p class="text-uppercase">Address</p>
                         <p class="text-uppercase">Zirakpur, India</p>
                       </div>
                     </div>
-                    <div class="contact-item media">
-                      <i class="fa fa-mobile media-left media-right-margin"></i>
+                    <div class="contact-item">
+                      <i class="fa fa-mobile"></i>
                       <div class="media-body">
                         <p class="text-uppercase">Phone</p>
                         <p class="text-uppercase">
-                          <a class="text-white" href="tel:+15173977100"
-                            >009900990099</a
-                          >
+                          <a href="tel:+15173977100">009900990099</a>
                         </p>
                       </div>
                     </div>
-                    <div class="contact-item media">
-                      <i
-                        class="fa fa-envelope media-left media-right-margin"
-                      ></i>
+                    <div class="contact-item">
+                      <i class="fa fa-envelope"></i>
                       <div class="media-body">
                         <p class="text-uppercase">E-mail</p>
                         <p class="text-uppercase">
-                          <a class="text-white" href="mailto:abcdefg@gmail.com">
-                            Homenetics_Official@homenetics.in</a
+                          <a href="mailto:abcdefg@gmail.com"
+                            >Homenetics_Official@homenetics.in</a
                           >
                         </p>
                       </div>
                     </div>
-                    <div class="contact-item media">
-                      <i class="fa fa-clock media-left media-right-margin"></i>
+                    <div class="contact-item">
+                      <i class="fa fa-clock"></i>
                       <div class="media-body">
                         <p class="text-uppercase">Working Hours</p>
                         <p class="text-uppercase">Mon-Fri 9.00 AM to 5.00PM.</p>

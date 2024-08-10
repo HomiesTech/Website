@@ -133,7 +133,7 @@ h6 {
 }
 .banner-text {
 	padding-right:80px;
-	margin:50px 0px 0px;
+	margin:150px 0px 0px 0px;
 }
 .banner-text p {
 	margin:40px 0px;
@@ -450,16 +450,22 @@ input {
 	cursor:pointer;
 }
 .contact-info {
-	padding: 2rem 2rem 1rem;
+	padding: 2rem 2rem 2rem 2rem;
+	
 	border-radius: 8px;
 	background: #2388ed;
 	background: linear-gradient(to left, #0444b2, #7e9cf7);
 }
 .contact-item {
-	margin:23px 0px;
+
+	
 }
 .contact-item i {
 	font-size: 20px;
+}
+.contact-item .email{
+	margin-right: 5rem;
+	padding-right: 5rem;
 }
 .contact-item p {
 	line-height: 20px;
@@ -529,6 +535,11 @@ input {
 .banner-text {
 	padding-right: 0px;
 	margin: 10px 0px 0px;
+}
+a .email{
+	padding:15rem;
+	margin:15rem;
+	
 }
 h2 {
 	font-size: 25px;
@@ -605,6 +616,11 @@ h3 {
 }
 .contact-item {
 	font-size: 12px;
+	
+}
+.media-body{
+	margin-right:100rem;
+	padding-right: 100rem;
 }
 .download ul li a img {
 	width: 120px;
@@ -612,4 +628,64 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+}
+.contact-info {
+    padding: 2rem;
+    border-radius: 12px;
+    background: linear-gradient(to left, #0444b2, #7e9cf7);
+    color: #ffffff;
+	width: 420px;
+    overflow: hidden; 
+}
+
+.contact-item .white{
+    margin: 1.5rem 0rem;
+    display: flex;
+    align-items: center;
+  
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 1rem;
+    color: #ffffff;
+}
+
+.contact-item p {
+    line-height: 1.2;
+    padding-left: 1rem;
+    font-size: 1rem;
+  
+}
+
+.contact-item a {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 1rem;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-item i {
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-item p,
+    .contact-item a {
+        font-size: 0.9rem;
+        word-wrap: break-word; /* Ensures email breaks into the next line on small screens */
+    }
 }
