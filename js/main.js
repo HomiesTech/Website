@@ -1,14 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const customUnitsInput = document.getElementById("custom-units-input");
-  const customUnitsDisplay = document.getElementById("custom-units");
-  const customPriceDisplay = document.getElementById("custom-price");
+document
+  .getElementById("customUnitsInput")
+  .addEventListener("input", function (e) {
+    const customUnits = e.target.value;
+    const customPricePerUnit = 3000;
+    const customPrice = customUnits > 0 ? customUnits * customPricePerUnit : 0;
 
-  const customPricePerUnit = 3000;
-
-  customUnitsInput.addEventListener("input", function () {
-    const units = Number(customUnitsInput.value);
-    customUnitsDisplay.textContent = units;
-    const customPrice = units > 0 ? units * customPricePerUnit : 0;
-    customPriceDisplay.textContent = `₹${customPrice}`;
+    document.getElementById("custom-units").textContent = customUnits;
+    document.getElementById("customPrice").textContent = `₹${customPrice}`;
   });
-});

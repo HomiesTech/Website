@@ -105,7 +105,7 @@ h6 {
 }
 .banner {
 	background: #2388ed;
-	background: linear-gradient(to left, #0444b2, #7e9cf7);
+	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 	padding:100px 0px;
 	position:relative;
 }
@@ -195,7 +195,7 @@ h6 {
 	height: 135px;
 	border-radius: 100px;
 	background: #2388ed;
-	background: linear-gradient(to left, #0444b2, #7e9cf7);
+	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 	color: #ffffff;
 	font-size: 50px;
 	line-height: 135px;
@@ -233,7 +233,7 @@ h5{
 	overflow: hidden;
 }
 .video-overlay {
-	background: linear-gradient(to left, #0444b2, #7e9cf7);
+	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 }
 .video-section h3 {
 	font-weight: 600;
@@ -333,7 +333,7 @@ h5{
 }
 .testimonial {
 	background: #2388ed;
-	background: linear-gradient(to left, #0444b2, #7e9cf7);
+	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 	padding:100px 0px;
 	position:relative;
 }
@@ -446,7 +446,7 @@ input {
 	border-radius: 2rem;
 	border: 0;
 	background: #2388ed;
-	background: linear-gradient(to left, #0444b2, #7e9cf7);
+	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 	cursor:pointer;
 }
 .contact-info {
@@ -454,7 +454,7 @@ input {
 	
 	border-radius: 8px;
 	background: #2388ed;
-	background: linear-gradient(to left, #0444b2, #7e9cf7);
+	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 }
 .contact-item {
 
@@ -473,7 +473,7 @@ input {
 }
 .download {
 	background: #2388ed;
-	background: linear-gradient(to left, #0444b2, #7e9cf7);
+	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 	padding:100px 0px;
 	position:relative;
 }
@@ -632,7 +632,7 @@ h3 {
 .contact-info {
     padding: 2rem;
     border-radius: 12px;
-    background: linear-gradient(to left, #0444b2, #7e9cf7);
+    background: linear-gradient(to left, #2d48f2, #7e9cf7);
     color: #ffffff;
 	width: 420px;
     overflow: hidden; 
@@ -689,31 +689,25 @@ h3 {
         word-wrap: break-word; /* Ensures email breaks into the next line on small screens */
     }
 }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
+.pricing-plan {
     padding: 20px;
-}
-
-.title {
     text-align: center;
-    color: #00aaff;
-    font-size: 2rem;
-    margin-top: 20px;
+    background-color: white;
 }
 
-.separator {
+.pricing-plan h2 {
+    font-size: 2.5rem;
+    color: #2d48f2;
+    margin-top: 40px;
+}
+
+.pricing-plan hr {
     width: 200px;
-    border: 2px solid #00aaff;
-    margin: 10px auto 40px auto;
+    border: 2px solid #2d48f2;
+    margin: 20px auto;
 }
 
-.plans {
+.plans-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -721,9 +715,9 @@ body {
 }
 
 .plan-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -736,28 +730,23 @@ body {
 
 .plan-content {
     display: flex;
-    padding: 10px;
 }
 
-.plan-image {
+.plan-content img {
     width: 100px;
-    height: 100px;
-    object-fit: cover;
+    height: 100%;
     border-radius: 10px 0 0 0;
+    object-fit: cover;
 }
 
 .plan-details {
-    flex: 1;
-    padding: 0 10px;
+    padding: 20px;
+    width: 100%;
 }
 
 .plan-units {
     font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.highlight {
-    color: #00aaff;
+    margin-bottom: 15px;
 }
 
 .plan-features {
@@ -766,49 +755,45 @@ body {
     margin: 0;
 }
 
-.feature-item {
+.plan-features li {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
-
-.checkmark {
-    color: #00aaff;
+.plan-features span .check{
+	color:#2d48f2;
 }
-
 .plan-footer {
-    background-color: #00aaff;
+    background-color: #2d48f2;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 0 0 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.plan-title {
-    font-size: 1rem;
+.plan-footer h3 {
+    margin: 0;
+	font-size: 1rem;
 }
 
-.plan-price {
-    font-size: 2rem;
-    font-weight: bold;
+.price {
+    font-size: 1.5rem;
 }
 
-.custom-plan {
-    border: 2px solid #00aaff;
-}
-
-.custom-input {
+.custom-plan input {
     width: 100%;
-    padding: 5px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    padding: 10px;
     margin-bottom: 10px;
+    border: 2px solid #2d48f2;
+    border-radius: 5px;
 }
 
-.custom-note {
+.plan-custom-text {
     font-style: italic;
-    color: #00aaff;
+    color: #2d48f2;
+	font-size: 0.8rem;
+	text-align: left;
 }
 
