@@ -1,10 +1,12 @@
 * {
 	padding:0;
 	margin:0;
+	overflow-x: hidden;
 }
 body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
+	overflow-x: hidden;
 }
 .logo-1{
 	width: 10rem;
@@ -456,10 +458,7 @@ input {
 	background: #2388ed;
 	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 }
-.contact-item {
 
-	
-}
 .contact-item i {
 	font-size: 20px;
 }
@@ -513,14 +512,17 @@ input {
 }
 @media all and (max-width:991px) {
 .navbar .navbar-collapse {
-	overflow: auto;
-	background:  rgb(213, 198, 221);
+	overflow: hidden;
+	background:  rgb(89, 104, 245);
 	color: #fff !important;
-	text-align: center;
+	text-align: left;
 	padding: 10px 0;
 }
 .nav-scroll .navbar-collapse {
 	background: #fff !important;
+}
+.navbar .navbar-toggler .fa-bars{
+	align-items:flex-start;
 }
 #contact_form {
 	margin-bottom:20px;
@@ -625,6 +627,7 @@ h3 {
 .download ul li a img {
 	width: 120px;
 }
+
 .footer-copy p {
 	font-size: 10px;
 }
@@ -634,7 +637,7 @@ h3 {
     border-radius: 12px;
     background: linear-gradient(to left, #2d48f2, #7e9cf7);
     color: #ffffff;
-	width: 420px;
+	width: 350px;
     overflow: hidden; 
 }
 
@@ -649,12 +652,16 @@ h3 {
     font-size: 24px;
     margin-right: 1rem;
     color: #ffffff;
+	margin: 0.4rem;
+	padding: 0.2rem;
 }
 
 .contact-item p {
     line-height: 1.2;
     padding-left: 1rem;
     font-size: 1rem;
+	margin: 0.4rem;
+	padding: 0.2rem;
   
 }
 
