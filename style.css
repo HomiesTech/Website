@@ -1,12 +1,10 @@
 * {
 	padding:0;
 	margin:0;
-	overflow-x: hidden;
 }
 body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
-	overflow-x: hidden;
 }
 .logo-1{
 	width: 10rem;
@@ -458,7 +456,10 @@ input {
 	background: #2388ed;
 	background: linear-gradient(to left, #2d48f2, #7e9cf7);
 }
+.contact-item {
 
+	
+}
 .contact-item i {
 	font-size: 20px;
 }
@@ -512,17 +513,14 @@ input {
 }
 @media all and (max-width:991px) {
 .navbar .navbar-collapse {
-	overflow: hidden;
-	background:  rgb(89, 104, 245);
-	color: #fff !important;
-	text-align: left;
+	overflow: auto;
+	background:  rgba(5, 45, 227, 0.5);
+	color: #5884ec !important;
+	text-align: center;
 	padding: 10px 0;
 }
 .nav-scroll .navbar-collapse {
 	background: #fff !important;
-}
-.navbar .navbar-toggler .fa-bars{
-	align-items:flex-start;
 }
 #contact_form {
 	margin-bottom:20px;
@@ -620,24 +618,20 @@ h3 {
 	font-size: 12px;
 	
 }
-.media-body{
-	margin-right:100rem;
-	padding-right: 100rem;
-}
+
 .download ul li a img {
 	width: 120px;
 }
-
 .footer-copy p {
 	font-size: 10px;
 }
 }
 .contact-info {
-    padding: 2rem;
+    padding: 1.4rem;
     border-radius: 12px;
     background: linear-gradient(to left, #2d48f2, #7e9cf7);
     color: #ffffff;
-	width: 350px;
+	/* width: 420px; */
     overflow: hidden; 
 }
 
@@ -647,27 +641,29 @@ h3 {
     align-items: center;
   
 }
-
+.media-body{
+	padding: 0.5rem;
+}
 .contact-item i {
-    font-size: 24px;
-    margin-right: 1rem;
+    font-size: 18px;
+    margin-right: 0.5rem;
+	line-height: 1.5rem;
     color: #ffffff;
-	margin: 0.4rem;
-	padding: 0.2rem;
+	
 }
 
 .contact-item p {
-    line-height: 1.2;
-    padding-left: 1rem;
+    line-height: 1.5;
+
     font-size: 1rem;
-	margin: 0.4rem;
-	padding: 0.2rem;
   
 }
 
 .contact-item a {
     color: #ffffff;
     text-decoration: none;
+
+	
     
 }
 
@@ -803,4 +799,3 @@ h3 {
 	font-size: 0.8rem;
 	text-align: left;
 }
-
