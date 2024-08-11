@@ -8,3 +8,11 @@ document
     document.getElementById("custom-units").textContent = customUnits;
     document.getElementById("customPrice").textContent = `₹${customPrice}`;
   });
+document.getElementById("demoVideo").addEventListener("click", function () {
+  var video = this;
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
+});
