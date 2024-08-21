@@ -258,6 +258,7 @@ h5{
 }
 
 .video-popup {
+	display: none; /* Ensure the popup is hidden by default */
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -265,18 +266,19 @@ h5{
 	height: 100%;
 	z-index: 99999;
 	background: rgba(0, 0, 0, 0.5);
-	display: flex;
+
 	align-items: center;
 	justify-content: center;
 	transform: translate(-50%, -50%);
-}
-
-.video-popup .video-src {
+  }
+  
+  .video-popup .video-src {
 	position: relative;
 	width: 700px;
 	max-width: 80%;
 	background: #000; /* Optional: Add background to video container */
-}
+  }
+  
 
 .video-popup .iframe-src {
 	width: 100%;

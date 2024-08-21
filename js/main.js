@@ -16,3 +16,18 @@ document.getElementById("demoVideo").addEventListener("click", function () {
     video.pause();
   }
 });
+document.getElementById("video-icon").addEventListener("click", function () {
+  const videoPopup = document.querySelector(".video-popup");
+  videoPopup.style.display = "flex";
+
+  const video = videoPopup.querySelector("video");
+  video.play();
+});
+
+document.querySelector(".video-popup").addEventListener("click", function (e) {
+  if (e.target === this) {
+    this.style.display = "none";
+    const video = this.querySelector("video");
+    video.pause();
+  }
+});
